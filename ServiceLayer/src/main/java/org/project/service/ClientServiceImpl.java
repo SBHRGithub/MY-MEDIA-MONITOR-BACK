@@ -77,8 +77,9 @@ public class ClientServiceImpl implements IClientService {
 
 
 
-    @Override
-    public Client findClient(String email, Optional<String> title, Optional<String> mediaType, Optional<String> viewingStatus, Optional<Integer> myScore) {
+
+    public Client findClient(String email, Optional<String> title, Optional<String> mediaType, Optional<String> viewingStatus, Optional<Integer> myScore)
+    {
 
 
         // Get all the data about the client
@@ -97,7 +98,9 @@ public class ClientServiceImpl implements IClientService {
             followedTVShows = optionalClientDatabase.get().getFollowedTVShow();
 
             // filter followedMovies and followedTVShows by title
-            if (title.isPresent()) {
+            if (!(title ==null)) {
+
+                logger.info("followedMovies filter by title : {}",title.get());
 
                 followedMovies = followedMovies.stream()
                         .filter(f -> f.getMovie().getTitle().equals(title.get()))
@@ -112,7 +115,9 @@ public class ClientServiceImpl implements IClientService {
             }
 
             // filter followedMovies and followedTVShows by viewingStatus
-            if (viewingStatus.isPresent()) {
+            if (!(viewingStatus ==null)) {
+
+                logger.info("followedMovies filter by viewingStatus : {}",viewingStatus.get());
 
                 followedMovies = followedMovies.stream()
                         .filter(f -> f.getViewingStatus().equals(viewingStatus.get()))
@@ -127,7 +132,9 @@ public class ClientServiceImpl implements IClientService {
             }
 
             // filter followedMovies and followedTVShows by myScore
-            if (myScore.isPresent()) {
+            if (!(myScore ==null)) {
+
+                logger.info("followedMovies filter by myScore : {}",myScore.get());
 
                 followedMovies = followedMovies.stream()
                         .filter(f-> f.getMyScore().equals(myScore.get()))
@@ -142,13 +149,16 @@ public class ClientServiceImpl implements IClientService {
             }
 
             // filter followedMovies and followedTVShows by mediaType
-            if (mediaType.isPresent()) {
+
+            if (!(mediaType ==null)) {
+
+                logger.info("followedMovies filter by mediaType : {}",mediaType.get());
 
                 if (mediaType.get().equals(TypeOfMedia.MOVIE.type)) {
 
                     client = new Client(email, followedMovies, null);
 
-                } else if (mediaType.get().equals(TypeOfMedia.MOVIE.type)) {
+                } else if (mediaType.get().equals(TypeOfMedia.TV.type)) {
 
                     client = new Client(email, null, followedTVShows);
 
@@ -241,6 +251,12 @@ public class ClientServiceImpl implements IClientService {
 
         followedTVShow=client.getFollowedTVShow().get(0);
 
+        if (followedTVShow.getViewingStatus().equals(StatusOfViewing.TOSEE.text)){
+
+            followedTVShow.setViewingStatus(StatusOfViewing.NOTSEEN.text);
+
+        }
+
         // Get id of the TV show
         Optional<TVShow> optionalTVShow = repoTVShow.findByExternalId(followedTVShow.getTvShow().getExternalId());
 
@@ -298,11 +314,7 @@ public class ClientServiceImpl implements IClientService {
         }
 
 
-        if (followedTVShow.getViewingStatus().equals(StatusOfViewing.TOSEE.text)){
 
-            followedTVShow.setViewingStatus(StatusOfViewing.NOTSEEN.text);
-
-        }
 
         repoClient.save(optionalClientDatabase.get());
 
@@ -320,6 +332,11 @@ public class ClientServiceImpl implements IClientService {
 
         followedMovie=client.getFollowedMovie().get(0);
 
+        if (followedMovie.getViewingStatus().equals(StatusOfViewing.TOSEE.text)){
+
+            followedMovie.setViewingStatus("Not seen");
+
+        }
 
         followedMovies= optionalClientDatabase.get().getFollowedMovie();
 
@@ -373,11 +390,6 @@ public class ClientServiceImpl implements IClientService {
 
 
 
-        if (followedMovie.getViewingStatus().equals(StatusOfViewing.TOSEE.text)){
-
-            followedMovie.setViewingStatus("Not seen");
-
-        }
 
 
         repoClient.save(optionalClientDatabase.get());
