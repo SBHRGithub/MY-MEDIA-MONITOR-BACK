@@ -3,10 +3,7 @@ package org.project.exposition.rest;
 
 
 import org.project.domain.Client;
-import org.project.exposition.dto.FollowedMovieDto;
-import org.project.exposition.dto.FollowedTVShowDto;
-import org.project.exposition.dto.SearchedMovieDto;
-import org.project.exposition.dto.SearchedTVShowDto;
+import org.project.exposition.dto.*;
 import org.project.exposition.mapper.ClientMapper;
 import org.project.service.IClientService;
 import org.slf4j.Logger;
@@ -16,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -35,25 +33,29 @@ public class ClientApi {
 
     @GetMapping("/get/movie")
 
-    public Client findFollowedMovie(@RequestBody SearchedMovieDto SearchedMovieDto)
+    public List<ResultMovieDto> findFollowedMovie(@RequestBody SearchedMovieDto SearchedMovieDto)
     {
         logger.info("findFollowedMovie client : {}",SearchedMovieDto.getEmail());
 
         Client client=service.findClient(SearchedMovieDto.getEmail(),SearchedMovieDto.getTitle(),SearchedMovieDto.getMediaType(),SearchedMovieDto.getViewingStatus(), SearchedMovieDto.getMyScore());
 
-        return client;
+        List<ResultMovieDto> results=mapper.convertClientToResultMovieDto(client);
+
+        return results;
     }
 
 
     @GetMapping("/get/tv")
 
-    public Client findFollowedTVShow(@RequestBody SearchedTVShowDto SearchedTVShowDto)
+    public List<ResultTVShowDto> findFollowedTVShow(@RequestBody SearchedTVShowDto SearchedTVShowDto)
     {
         logger.info("findFollowedTVShow client : {}",SearchedTVShowDto.getEmail());
 
         Client client=service.findClient(SearchedTVShowDto.getEmail(),SearchedTVShowDto.getName(),SearchedTVShowDto.getMediaType(),SearchedTVShowDto.getViewingStatus(), SearchedTVShowDto.getMyScore());
 
-        return client;
+        List<ResultTVShowDto> results=mapper.convertClientToResultTVShowDto(client);
+
+        return results;
     }
 
 

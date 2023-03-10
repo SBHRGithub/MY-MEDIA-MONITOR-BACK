@@ -103,11 +103,11 @@ public class ClientServiceImpl implements IClientService {
                 logger.info("followedMovies filter by title : {}",title.get());
 
                 followedMovies = followedMovies.stream()
-                        .filter(f -> f.getMovie().getTitle().equals(title.get()))
+                        .filter(f -> f.getMovie().getTitle().toLowerCase().equals(title.get().toLowerCase()))
                         .collect(Collectors.toList());
 
                 followedTVShows = followedTVShows.stream()
-                        .filter(f -> f.getTvShow().getName().equals(title.get()))
+                        .filter(f -> f.getTvShow().getName().toLowerCase().equals(title.get().toLowerCase()))
                         .collect(Collectors.toList());
 
                 client = new Client(email, followedMovies, followedTVShows);

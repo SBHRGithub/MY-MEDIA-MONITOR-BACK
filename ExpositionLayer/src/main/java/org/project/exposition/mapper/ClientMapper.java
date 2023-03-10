@@ -3,6 +3,8 @@ package org.project.exposition.mapper;
 import org.project.domain.*;
 import org.project.exposition.dto.FollowedMovieDto;
 import org.project.exposition.dto.FollowedTVShowDto;
+import org.project.exposition.dto.ResultMovieDto;
+import org.project.exposition.dto.ResultTVShowDto;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -12,6 +14,57 @@ import java.util.List;
 @Component
 public class ClientMapper {
 
+
+    public List<ResultMovieDto> convertClientToResultMovieDto(Client client){
+
+        List<ResultMovieDto> resultMovieDtoList = new ArrayList<>();
+
+
+        if (client.getFollowedMovie().size() > 0){
+            for (int i=0;i<client.getFollowedMovie().size();i++){
+
+                ResultMovieDto resultMovieDto = new ResultMovieDto();
+
+                resultMovieDto.setExternalId(client.getFollowedMovie().get(i).getMovie().getExternalId());
+                resultMovieDto.setTitle(client.getFollowedMovie().get(i).getMovie().getTitle());
+                resultMovieDto.setMediaType(client.getFollowedMovie().get(i).getMovie().getMediaType());
+                resultMovieDto.setViewingStatus(client.getFollowedMovie().get(i).getViewingStatus());
+                resultMovieDto.setMyScore((client.getFollowedMovie().get(i).getMyScore()));
+
+                resultMovieDtoList.add(resultMovieDto);
+
+            }
+        }
+        return resultMovieDtoList;
+    }
+
+
+
+    public List<ResultTVShowDto> convertClientToResultTVShowDto(Client client){
+
+        List<ResultTVShowDto> resultTVShowDtoList = new ArrayList<>();
+
+
+        if (client.getFollowedTVShow().size() > 0){
+            for (int i=0;i<client.getFollowedTVShow().size();i++){
+
+                ResultTVShowDto resultTVShowDto = new ResultTVShowDto();
+
+                resultTVShowDto.setExternalId(client.getFollowedTVShow().get(i).getTvShow().getExternalId());
+                resultTVShowDto.setTitle(client.getFollowedTVShow().get(i).getTvShow().getName());
+                resultTVShowDto.setMediaType(client.getFollowedTVShow().get(i).getTvShow().getMediaType());
+                resultTVShowDto.setViewingStatus(client.getFollowedTVShow().get(i).getViewingStatus());
+                resultTVShowDto.setMyScore((client.getFollowedTVShow().get(i).getMyScore()));
+                resultTVShowDto.setOngoingSeason(client.getFollowedTVShow().get(i).getOngoingSeason());
+                resultTVShowDto.setOngoingEpisode(client.getFollowedTVShow().get(i).getOngoingEpisode());
+
+                resultTVShowDtoList.add(resultTVShowDto);
+
+
+            }
+        }
+        return resultTVShowDtoList;
+    }
 
 
     public Client convertFollowedMovieDtoToClient(FollowedMovieDto dto){
