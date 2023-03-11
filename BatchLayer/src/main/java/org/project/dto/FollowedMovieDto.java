@@ -1,4 +1,4 @@
-package org.project.exposition.dto;
+package org.project.dto;
 
 public class FollowedMovieDto {
 

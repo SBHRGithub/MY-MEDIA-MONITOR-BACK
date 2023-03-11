@@ -1,0 +1,24 @@
+2023-03-10 16:48:39.027  INFO 11332 --- [main] org.project.Main                         : Starting Main using Java 17.0.5 on DESKTOP-JIQQNUS with PID 11332 (C:\Exo\MY-MEDIA-MONITOR-BACK\BatchLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-10 16:48:39.031  INFO 11332 --- [main] org.project.Main                         : No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:48:39.190 ERROR 11332 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.NoClassDefFoundError: jakarta/servlet/ServletRequest
+	at org.springframework.web.context.support.WebApplicationContextUtils.registerWebApplicationScopes(WebApplicationContextUtils.java:195) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.context.support.WebApplicationContextUtils.registerWebApplicationScopes(WebApplicationContextUtils.java:174) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.registerWebApplicationScopes(ServletWebServerApplicationContext.java:250) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.postProcessBeanFactory(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.postProcessBeanFactory(AnnotationConfigServletWebServerApplicationContext.java:203) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:560) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.project.Main.main(Main.java:12) ~[classes/:na]
+Caused by: java.lang.ClassNotFoundException: jakarta.servlet.ServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 13 common frames omitted
+

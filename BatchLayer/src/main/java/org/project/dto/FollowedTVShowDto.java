@@ -1,12 +1,12 @@
-package org.project.exposition.dto;
+package org.project.dto;
 
-public class FollowedMovieDto {
+public class FollowedTVShowDto {
 
 
 
     private String email;
 
-    private String title;
+    private String name;
 
     private Long externalId;
 
@@ -16,16 +16,23 @@ public class FollowedMovieDto {
 
     private Integer myScore;
 
-    public FollowedMovieDto() {
+    private Integer ongoingSeason;
+
+    private Integer ongoingEpisode;
+
+
+    public FollowedTVShowDto() {
     }
 
-    public FollowedMovieDto(String email, String title, Long externalId, String mediaType, String viewingStatus, Integer myScore) {
+    public FollowedTVShowDto(String email, String name, Long externalId, String mediaType, String viewingStatus, Integer myScore, Integer ongoingSeason, Integer ongoingEpisode) {
         this.email = email;
-        this.title = title;
+        this.name = name;
         this.externalId = externalId;
         this.mediaType = mediaType;
         this.viewingStatus = viewingStatus;
         this.myScore = myScore;
+        this.ongoingSeason = ongoingSeason;
+        this.ongoingEpisode = ongoingEpisode;
     }
 
     public String getEmail() {
@@ -36,12 +43,12 @@ public class FollowedMovieDto {
         this.email = email;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Long getExternalId() {
@@ -74,5 +81,21 @@ public class FollowedMovieDto {
 
     public void setMyScore(Integer myScore) {
         this.myScore = myScore;
+    }
+
+    public Integer getOngoingSeason() {
+        return ongoingSeason;
+    }
+
+    public void setOngoingSeason(Integer ongoingSeason) {
+        this.ongoingSeason = ongoingSeason;
+    }
+
+    public Integer getOngoingEpisode() {
+        return ongoingEpisode;
+    }
+
+    public void setOngoingEpisode(Integer ongoingEpisode) {
+        this.ongoingEpisode = ongoingEpisode;
     }
 }

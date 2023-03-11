@@ -18,6 +18,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
+@EnableWebSecurity
 public class ClientApi {
 
     @Autowired
@@ -30,14 +31,24 @@ public class ClientApi {
     Logger logger= LoggerFactory.getLogger(ClientApi.class);
 
 
-
+    @CrossOrigin
     @GetMapping("/get/movie")
+    public List<ResultMovieDto> findFollowedMovie(@RequestParam String email,
+                                                    @RequestParam Optional<String> title,
+                                                    @RequestParam Optional<String> mediaType,
+                                                    @RequestParam Optional<String> viewingStatus,
+                                                    @RequestParam Optional<Integer> myScore) {
 
-    public List<ResultMovieDto> findFollowedMovie(@RequestBody SearchedMovieDto SearchedMovieDto)
-    {
-        logger.info("findFollowedMovie client : {}",SearchedMovieDto.getEmail());
+        logger.debug("DEBUG---email = {}",email);
+        logger.debug("DEBUG---title = {}",title.isPresent());
+        logger.debug("DEBUG---mediaType = {}",mediaType.isPresent());
+        logger.debug("DEBUG---viewingStatus = {}",viewingStatus.isPresent());
+        logger.debug("DEBUG---myScore = {}",myScore.isPresent());
 
-        Client client=service.findClient(SearchedMovieDto.getEmail(),SearchedMovieDto.getTitle(),SearchedMovieDto.getMediaType(),SearchedMovieDto.getViewingStatus(), SearchedMovieDto.getMyScore());
+
+        logger.info("findFollowedMovie client : {}",email);
+
+        Client client=service.findClient(email,title,mediaType,viewingStatus, myScore);
 
         List<ResultMovieDto> results=mapper.convertClientToResultMovieDto(client);
 
@@ -45,13 +56,25 @@ public class ClientApi {
     }
 
 
+
+    @CrossOrigin
     @GetMapping("/get/tv")
+    public List<ResultTVShowDto> findFollowedTVShow(@RequestParam String email,
+                       @RequestParam Optional<String> name,
+                       @RequestParam Optional<String> mediaType,
+                       @RequestParam Optional<String> viewingStatus,
+                       @RequestParam Optional<Integer> myScore) {
 
-    public List<ResultTVShowDto> findFollowedTVShow(@RequestBody SearchedTVShowDto SearchedTVShowDto)
-    {
-        logger.info("findFollowedTVShow client : {}",SearchedTVShowDto.getEmail());
+        logger.debug("DEBUG---email = {}",email);
+        logger.debug("DEBUG---title = {}",name.isPresent());
+        logger.debug("DEBUG---mediaType = {}",mediaType.isPresent());
+        logger.debug("DEBUG---viewingStatus = {}",viewingStatus.isPresent());
+        logger.debug("DEBUG---myScore = {}",myScore.isPresent());
 
-        Client client=service.findClient(SearchedTVShowDto.getEmail(),SearchedTVShowDto.getName(),SearchedTVShowDto.getMediaType(),SearchedTVShowDto.getViewingStatus(), SearchedTVShowDto.getMyScore());
+
+        logger.info("findFollowedTVShow client : {}",email);
+
+        Client client=service.findClient(email,name,mediaType,viewingStatus, myScore);
 
         List<ResultTVShowDto> results=mapper.convertClientToResultTVShowDto(client);
 
@@ -60,8 +83,7 @@ public class ClientApi {
 
 
 
-
-
+    @CrossOrigin
     @PostMapping("/post/movie")
     public ResponseEntity<Client> create(@RequestBody FollowedMovieDto followedMovieDto)
     {
@@ -76,7 +98,7 @@ public class ClientApi {
 
 
 
-
+    @CrossOrigin
     @PostMapping("/post/tv")
     public ResponseEntity<Client> create(@RequestBody FollowedTVShowDto followedTVShowDto)
     {

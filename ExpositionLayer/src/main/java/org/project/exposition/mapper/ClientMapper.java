@@ -7,6 +7,7 @@ import org.project.exposition.dto.ResultMovieDto;
 import org.project.exposition.dto.ResultTVShowDto;
 import org.springframework.stereotype.Component;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +21,8 @@ public class ClientMapper {
         List<ResultMovieDto> resultMovieDtoList = new ArrayList<>();
 
 
-        if (client.getFollowedMovie().size() > 0){
+        if (!(client.getFollowedMovie()==null)) {
+
             for (int i=0;i<client.getFollowedMovie().size();i++){
 
                 ResultMovieDto resultMovieDto = new ResultMovieDto();
@@ -35,6 +37,7 @@ public class ClientMapper {
 
             }
         }
+
         return resultMovieDtoList;
     }
 
@@ -45,7 +48,7 @@ public class ClientMapper {
         List<ResultTVShowDto> resultTVShowDtoList = new ArrayList<>();
 
 
-        if (client.getFollowedTVShow().size() > 0){
+        if (!(client.getFollowedTVShow()==null)) {
             for (int i=0;i<client.getFollowedTVShow().size();i++){
 
                 ResultTVShowDto resultTVShowDto = new ResultTVShowDto();

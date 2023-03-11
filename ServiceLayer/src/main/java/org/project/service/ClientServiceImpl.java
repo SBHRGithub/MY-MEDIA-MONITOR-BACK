@@ -86,7 +86,7 @@ public class ClientServiceImpl implements IClientService {
         optionalClientDatabase = repoClient.findByEmail(email);
         logger.debug("service findClient {}", email);
 
-        Client client=null;
+        Client client=new Client();
 
         if (optionalClientDatabase.isPresent()) {
 
@@ -98,7 +98,7 @@ public class ClientServiceImpl implements IClientService {
             followedTVShows = optionalClientDatabase.get().getFollowedTVShow();
 
             // filter followedMovies and followedTVShows by title
-            if (!(title ==null)) {
+            if (title.isPresent()) {
 
                 logger.info("followedMovies filter by title : {}",title.get());
 
@@ -115,7 +115,7 @@ public class ClientServiceImpl implements IClientService {
             }
 
             // filter followedMovies and followedTVShows by viewingStatus
-            if (!(viewingStatus ==null)) {
+            if (viewingStatus.isPresent()) {
 
                 logger.info("followedMovies filter by viewingStatus : {}",viewingStatus.get());
 
@@ -132,7 +132,7 @@ public class ClientServiceImpl implements IClientService {
             }
 
             // filter followedMovies and followedTVShows by myScore
-            if (!(myScore ==null)) {
+            if (myScore.isPresent()) {
 
                 logger.info("followedMovies filter by myScore : {}",myScore.get());
 
@@ -150,7 +150,7 @@ public class ClientServiceImpl implements IClientService {
 
             // filter followedMovies and followedTVShows by mediaType
 
-            if (!(mediaType ==null)) {
+            if (mediaType.isPresent()) {
 
                 logger.info("followedMovies filter by mediaType : {}",mediaType.get());
 
@@ -168,9 +168,6 @@ public class ClientServiceImpl implements IClientService {
 
 
 
-        } else {
-            logger.error("no data with email  {}", email);
-            throw new EntityNotFoundException("Client don't exist in the database");
         }
 
 
