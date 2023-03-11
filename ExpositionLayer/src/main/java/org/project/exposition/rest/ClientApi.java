@@ -31,7 +31,7 @@ public class ClientApi {
     Logger logger= LoggerFactory.getLogger(ClientApi.class);
 
 
-    @CrossOrigin
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/get/movie")
     public List<ResultMovieDto> findFollowedMovie(@RequestParam String email,
                                                     @RequestParam Optional<String> title,
@@ -57,7 +57,7 @@ public class ClientApi {
 
 
 
-    @CrossOrigin
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/get/tv")
     public List<ResultTVShowDto> findFollowedTVShow(@RequestParam String email,
                        @RequestParam Optional<String> name,
@@ -83,7 +83,7 @@ public class ClientApi {
 
 
 
-    @CrossOrigin
+    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping("/post/movie")
     public ResponseEntity<Client> create(@RequestBody FollowedMovieDto followedMovieDto)
     {
@@ -98,7 +98,7 @@ public class ClientApi {
 
 
 
-    @CrossOrigin
+    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping("/post/tv")
     public ResponseEntity<Client> create(@RequestBody FollowedTVShowDto followedTVShowDto)
     {
