@@ -866,3 +866,81 @@ This generated password is for development use only. Your security configuration
 2023-03-11 13:02:33.818  INFO 9316 --- [http-nio-8080-exec-3] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
 2023-03-11 13:02:33.827  INFO 9316 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
 2023-03-11 13:02:33.828  INFO 9316 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : followedMovies filter by mediaType : tv
+2023-03-11 13:24:10.778  WARN 9316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m32s224ms930µs500ns).
+2023-03-11 13:25:20.010  INFO 9316 --- [http-nio-8080-exec-6] org.project.exposition.rest.ClientApi    : findFollowedMovie client : a@free.fr
+2023-03-11 13:25:20.033  INFO 9316 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-11 13:25:20.034  INFO 9316 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : followedMovies filter by title : movie1
+2023-03-11 13:25:20.059  INFO 9316 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : followedMovies filter by mediaType : movie
+2023-03-11 13:34:18.705  WARN 9316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m37s913ms613µs800ns).
+2023-03-11 13:34:35.074  INFO 9316 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-11 13:34:35.177  INFO 9316 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-11 13:34:35.209  INFO 9316 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-11 14:16:37.402  INFO 7956 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 7956 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-11 14:16:37.409  INFO 7956 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-11 14:16:39.528  INFO 7956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-11 14:16:39.656  INFO 7956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 4 JPA repository interfaces.
+2023-03-11 14:16:40.799  INFO 7956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11 14:16:40.829  INFO 7956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11 14:16:40.830  INFO 7956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-11 14:16:41.129  INFO 7956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11 14:16:41.130  INFO 7956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3604 ms
+2023-03-11 14:16:41.480  INFO 7956 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-11 14:16:41.606  INFO 7956 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-11 14:16:42.003  INFO 7956 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-11 14:16:42.263  INFO 7956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-11 14:16:42.492  INFO 7956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-11 14:16:42.546  INFO 7956 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-11 14:16:44.631  INFO 7956 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-11 14:16:44.653  INFO 7956 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-11 14:16:46.120  WARN 7956 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-11 14:16:47.092  INFO 7956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-11 14:16:47.831  INFO 7956 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 11.482 seconds (JVM running for 12.754)
+2023-03-11 14:18:22.798  INFO 7956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-11 14:18:22.800  INFO 7956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-11 14:18:22.802  INFO 7956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-11 14:18:42.456  INFO 7956 --- [http-nio-8080-exec-3] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-11 14:18:42.706  INFO 7956 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-11 14:18:42.706  INFO 7956 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : followedMovies filter by title : tvshow2
+2023-03-11 14:18:42.734  INFO 7956 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : followedMovies filter by mediaType : tv
+2023-03-11 14:18:57.177  INFO 7956 --- [http-nio-8080-exec-4] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-11 14:18:57.182  INFO 7956 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-11 14:18:57.182  INFO 7956 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : followedMovies filter by myScore : 2
+2023-03-11 14:18:57.190  INFO 7956 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : followedMovies filter by mediaType : tv
+2023-03-11 14:34:04.037  INFO 7956 --- [http-nio-8080-exec-7] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-11 14:34:04.178  INFO 7956 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-11 14:34:04.179  INFO 7956 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : followedMovies filter by viewingStatus : Ongoing
+2023-03-11 14:34:04.254  INFO 7956 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : followedMovies filter by mediaType : tv
+2023-03-11 14:52:38.501  INFO 7956 --- [http-nio-8080-exec-10] org.project.exposition.rest.ClientApi    : findFollowedMovie client : i@free.fr
+2023-03-11 14:52:38.535  INFO 7956 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : client found in database : i@free.fr
+2023-03-11 14:52:38.535  INFO 7956 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : followedMovies filter by mediaType : movie
+2023-03-11 14:53:36.306  INFO 7956 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : findFollowedMovie client : j@free.fr
+2023-03-11 14:53:36.319  INFO 7956 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : client found in database : j@free.fr
+2023-03-11 14:53:36.320  INFO 7956 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : followedMovies filter by mediaType : movie
+2023-03-11 15:04:30.112  INFO 7956 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-11 15:04:30.150  INFO 7956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-11 15:04:30.174  INFO 7956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-11 15:04:35.057  INFO 9488 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 9488 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-11 15:04:35.063  INFO 9488 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-11 15:04:36.446  INFO 9488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-11 15:04:36.578  INFO 9488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 4 JPA repository interfaces.
+2023-03-11 15:04:38.629  INFO 9488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11 15:04:38.684  INFO 9488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11 15:04:38.690  INFO 9488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-11 15:04:39.104  INFO 9488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11 15:04:39.105  INFO 9488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3958 ms
+2023-03-11 15:04:39.553  INFO 9488 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-11 15:04:39.687  INFO 9488 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-11 15:04:40.009  INFO 9488 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-11 15:04:40.186  INFO 9488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-11 15:04:40.355  INFO 9488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-11 15:04:40.385  INFO 9488 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-11 15:04:41.416  INFO 9488 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-11 15:04:41.425  INFO 9488 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-11 15:04:42.179  WARN 9488 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-11 15:04:43.264  INFO 9488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-11 15:04:43.955  INFO 9488 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 9.651 seconds (JVM running for 10.262)
+2023-03-11 15:05:18.713  INFO 9488 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-11 15:05:18.713  INFO 9488 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-11 15:05:18.714  INFO 9488 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-11 15:05:18.826  INFO 9488 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : save client : k@free.fr
+2023-03-11 15:05:37.501  INFO 9488 --- [http-nio-8080-exec-3] org.project.exposition.rest.ClientApi    : save client : l@free.fr

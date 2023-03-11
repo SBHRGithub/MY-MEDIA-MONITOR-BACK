@@ -193,6 +193,12 @@ public class ClientServiceImpl implements IClientService {
 
             }
 
+            if (client.getFollowedMovie().get(0).getViewingStatus().equals(StatusOfViewing.TOSEE.text)){
+
+                client.getFollowedMovie().get(0).setViewingStatus(StatusOfViewing.NOTSEEN.text);
+
+            }
+
         } else if (client.getFollowedTVShow() != null) {
 
             Optional<TVShow> optionalTVShow = repoTVShow.findByExternalId(client.getFollowedTVShow().get(0).getTvShow().getExternalId());
@@ -202,6 +208,13 @@ public class ClientServiceImpl implements IClientService {
             if (optionalTVShow.isPresent()){
 
                 client.getFollowedTVShow().get(0).getTvShow().setId(optionalTVShow.get().getId());
+
+            }
+
+
+            if (client.getFollowedTVShow().get(0).getViewingStatus().equals(StatusOfViewing.TOSEE.text)){
+
+                client.getFollowedTVShow().get(0).setViewingStatus(StatusOfViewing.NOTSEEN.text);
 
             }
 
