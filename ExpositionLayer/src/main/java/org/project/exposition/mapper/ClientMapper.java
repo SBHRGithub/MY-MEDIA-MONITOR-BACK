@@ -13,6 +13,27 @@ import java.util.List;
 public class ClientMapper {
 
 
+    public enum Score{
+
+
+        NOTRATED(6),
+        VERYGOOD(5),
+        GOOD(4),
+        AVERAGE(3),
+        FAIR(2),
+        BAD(1),
+        NO(0);
+
+
+
+        private final Integer number;
+
+        Score(Integer number) {
+            this.number = number;
+        }
+    }
+
+
     public ResultListMovieDto convertClientToResultListMovieDto(Client client){
 
         ResultListMovieDto resultListMovieDto = new ResultListMovieDto();
@@ -88,7 +109,19 @@ public class ClientMapper {
 
         followedMovie.setMovie(movie);
         followedMovie.setViewingStatus(dto.getViewingStatus());
-        followedMovie.setMyScore(dto.getMyScore());
+
+        if (dto.getViewingStatus()==""){
+            followedMovie.setViewingStatus("Not seen");
+        } else {
+            followedMovie.setViewingStatus(dto.getViewingStatus());
+        }
+
+        if (dto.getMyScore().isEmpty()){
+            followedMovie.setMyScore(Score.NOTRATED.number);
+        } else {
+            followedMovie.setMyScore(dto.getMyScore().get());
+        }
+
 
         followedMovies.add(0,followedMovie);
 
@@ -113,10 +146,35 @@ public class ClientMapper {
         tvShow.setMediaType(dto.getMediaType());
 
         followedTVShow.setTvShow(tvShow);
-        followedTVShow.setViewingStatus(dto.getViewingStatus());
-        followedTVShow.setMyScore(dto.getMyScore());
-        followedTVShow.setOngoingSeason((dto.getOngoingSeason()));
-        followedTVShow.setOngoingEpisode(dto.getOngoingEpisode());
+
+        if (dto.getViewingStatus()==""){
+            followedTVShow.setViewingStatus("Not seen");
+        } else {
+            followedTVShow.setViewingStatus(dto.getViewingStatus());
+        }
+
+
+        if (dto.getMyScore().isEmpty()){
+            followedTVShow.setMyScore(Score.NOTRATED.number);
+        } else {
+            followedTVShow.setMyScore(dto.getMyScore().get());
+        }
+
+        if (dto.getOngoingSeason().isEmpty()){
+            followedTVShow.setOngoingSeason(0);
+        } else {
+            followedTVShow.setMyScore(dto.getMyScore().get());
+        };
+
+
+        if (dto.getOngoingEpisode().isEmpty()){
+            followedTVShow.setOngoingEpisode(0);
+        } else {
+            followedTVShow.setMyScore(dto.getMyScore().get());
+        }
+
+
+
 
         followedTVShows.add(0,followedTVShow);
 

@@ -1,5 +1,7 @@
 package org.project.exposition.dto;
 
+import java.util.Optional;
+
 public class FollowedMovieDto {
 
 
@@ -14,12 +16,12 @@ public class FollowedMovieDto {
 
     private String viewingStatus;
 
-    private Integer myScore;
+    private Optional<Integer> myScore;
 
     public FollowedMovieDto() {
     }
 
-    public FollowedMovieDto(String email, String title, Long externalId, String mediaType, String viewingStatus, Integer myScore) {
+    public FollowedMovieDto(String email, String title, Long externalId, String mediaType, String viewingStatus, Optional<Integer> myScore) {
         this.email = email;
         this.title = title;
         this.externalId = externalId;
@@ -68,11 +70,11 @@ public class FollowedMovieDto {
         this.viewingStatus = viewingStatus;
     }
 
-    public Integer getMyScore() {
+    public Optional<Integer> getMyScore() {
         return myScore;
     }
 
-    public void setMyScore(Integer myScore) {
+    public void setMyScore(Optional<Integer> myScore) {
         this.myScore = myScore;
     }
 }

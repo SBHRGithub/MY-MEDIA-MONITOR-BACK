@@ -1,5 +1,7 @@
 package org.project.dto;
 
+import java.util.Optional;
+
 public class FollowedMovieDto {
 
 

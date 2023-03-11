@@ -1,5 +1,7 @@
 package org.project.exposition.dto;
 
+import java.util.Optional;
+
 public class FollowedTVShowDto {
 
 
@@ -14,11 +16,11 @@ public class FollowedTVShowDto {
 
     private String viewingStatus;
 
-    private Integer myScore;
+    private Optional<Integer> myScore;
 
-    private Integer ongoingSeason;
+    private Optional<Integer> ongoingSeason;
 
-    private Integer ongoingEpisode;
+    private Optional<Integer> ongoingEpisode;
 
 
     public FollowedTVShowDto() {
@@ -65,27 +67,28 @@ public class FollowedTVShowDto {
         this.viewingStatus = viewingStatus;
     }
 
-    public Integer getMyScore() {
+
+    public Optional<Integer> getMyScore() {
         return myScore;
     }
 
-    public void setMyScore(Integer myScore) {
+    public void setMyScore(Optional<Integer> myScore) {
         this.myScore = myScore;
     }
 
-    public Integer getOngoingSeason() {
+    public Optional<Integer> getOngoingSeason() {
         return ongoingSeason;
     }
 
-    public void setOngoingSeason(Integer ongoingSeason) {
+    public void setOngoingSeason(Optional<Integer> ongoingSeason) {
         this.ongoingSeason = ongoingSeason;
     }
 
-    public Integer getOngoingEpisode() {
+    public Optional<Integer> getOngoingEpisode() {
         return ongoingEpisode;
     }
 
-    public void setOngoingEpisode(Integer ongoingEpisode) {
+    public void setOngoingEpisode(Optional<Integer> ongoingEpisode) {
         this.ongoingEpisode = ongoingEpisode;
     }
 }
