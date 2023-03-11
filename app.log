@@ -1370,3 +1370,53 @@ java.util.NoSuchElementException: No value present
 2023-03-11 18:44:52.079  INFO 13020 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
 2023-03-11 18:44:52.079  INFO 13020 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : followedMovies filter by title : tvshow2
 2023-03-11 18:44:52.083  INFO 13020 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : followedMovies filter by mediaType : tv
+2023-03-11 18:50:46.235  INFO 13020 --- [http-nio-8080-exec-10] org.project.exposition.rest.ClientApi    : save client : a@free.fr
+2023-03-11 18:50:46.240  INFO 13020 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : movie found in the database
+2023-03-11 18:50:46.243  INFO 13020 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : followedMovie updated with the new data
+2023-03-11 18:50:46.245  INFO 13020 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : client saved
+2023-03-11 18:56:33.356  INFO 13020 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-11 18:56:33.366  INFO 13020 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-11 18:56:33.381  INFO 13020 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-11 18:56:57.411  INFO 5864 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 5864 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-11 18:56:57.417  INFO 5864 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-11 18:56:58.658  INFO 5864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-11 18:56:58.765  INFO 5864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 4 JPA repository interfaces.
+2023-03-11 18:56:59.729  INFO 5864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11 18:56:59.747  INFO 5864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11 18:56:59.747  INFO 5864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-11 18:56:59.945  INFO 5864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11 18:56:59.946  INFO 5864 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2452 ms
+2023-03-11 18:57:00.227  INFO 5864 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-11 18:57:00.330  INFO 5864 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-11 18:57:00.592  INFO 5864 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-11 18:57:00.745  INFO 5864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-11 18:57:00.913  INFO 5864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-11 18:57:00.949  INFO 5864 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-11 18:57:02.120  INFO 5864 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-11 18:57:02.131  INFO 5864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-11 18:57:02.956  WARN 5864 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-11 18:57:03.503  INFO 5864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-11 18:57:03.832  INFO 5864 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 7.077 seconds (JVM running for 7.604)
+2023-03-11 18:57:42.954  INFO 5864 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-11 18:57:42.958  INFO 5864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-11 18:57:42.964  INFO 5864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-11 18:57:46.961  INFO 1964 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 1964 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-11 18:57:46.966  INFO 1964 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-11 18:57:48.682  INFO 1964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-11 18:57:48.787  INFO 1964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 4 JPA repository interfaces.
+2023-03-11 18:57:49.917  INFO 1964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11 18:57:49.934  INFO 1964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11 18:57:49.935  INFO 1964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-11 18:57:50.114  INFO 1964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11 18:57:50.115  INFO 1964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3062 ms
+2023-03-11 18:57:50.432  INFO 1964 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-11 18:57:50.551  INFO 1964 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-11 18:57:50.821  INFO 1964 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-11 18:57:51.000  INFO 1964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-11 18:57:51.187  INFO 1964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-11 18:57:51.221  INFO 1964 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-11 18:57:52.345  INFO 1964 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-11 18:57:52.359  INFO 1964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-11 18:57:53.363  WARN 1964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-11 18:57:54.079  INFO 1964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-11 18:57:54.584  INFO 1964 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 8.321 seconds (JVM running for 8.864)

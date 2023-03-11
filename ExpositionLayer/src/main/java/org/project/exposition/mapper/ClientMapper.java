@@ -78,7 +78,7 @@ public class ClientMapper {
                 ResultTVShowDto resultTVShowDto = new ResultTVShowDto();
 
                 resultTVShowDto.setExternalId(client.getFollowedTVShow().get(i).getTvShow().getExternalId());
-                resultTVShowDto.setTitle(client.getFollowedTVShow().get(i).getTvShow().getName());
+                resultTVShowDto.setName(client.getFollowedTVShow().get(i).getTvShow().getName());
                 resultTVShowDto.setMediaType(client.getFollowedTVShow().get(i).getTvShow().getMediaType());
                 resultTVShowDto.setViewingStatus(client.getFollowedTVShow().get(i).getViewingStatus());
                 resultTVShowDto.setMyScore((client.getFollowedTVShow().get(i).getMyScore()));

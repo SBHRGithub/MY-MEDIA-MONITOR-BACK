@@ -4,7 +4,7 @@ public class ResultTVShowDto {
 
     private Long externalId;
 
-    private String title;
+    private String name;
 
     private String mediaType;
 
@@ -27,12 +27,12 @@ public class ResultTVShowDto {
         this.externalId = externalId;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getMediaType() {
