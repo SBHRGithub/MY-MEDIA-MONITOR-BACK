@@ -1,10 +1,7 @@
 package org.project.exposition.mapper;
 
 import org.project.domain.*;
-import org.project.exposition.dto.FollowedMovieDto;
-import org.project.exposition.dto.FollowedTVShowDto;
-import org.project.exposition.dto.ResultMovieDto;
-import org.project.exposition.dto.ResultTVShowDto;
+import org.project.exposition.dto.*;
 import org.springframework.stereotype.Component;
 
 
@@ -16,7 +13,9 @@ import java.util.List;
 public class ClientMapper {
 
 
-    public List<ResultMovieDto> convertClientToResultMovieDto(Client client){
+    public ResultListMovieDto convertClientToResultListMovieDto(Client client){
+
+        ResultListMovieDto resultListMovieDto = new ResultListMovieDto();
 
         List<ResultMovieDto> resultMovieDtoList = new ArrayList<>();
 
@@ -36,14 +35,18 @@ public class ClientMapper {
                 resultMovieDtoList.add(resultMovieDto);
 
             }
+
+            resultListMovieDto.setResults(resultMovieDtoList);
         }
 
-        return resultMovieDtoList;
+        return resultListMovieDto;
     }
 
 
 
-    public List<ResultTVShowDto> convertClientToResultTVShowDto(Client client){
+    public ResultListTVShowDto convertClientToResultListTVShowDto(Client client){
+
+        ResultListTVShowDto resultListTVShowDto= new ResultListTVShowDto();
 
         List<ResultTVShowDto> resultTVShowDtoList = new ArrayList<>();
 
@@ -65,8 +68,10 @@ public class ClientMapper {
 
 
             }
+
+            resultListTVShowDto.setResults(resultTVShowDtoList);
         }
-        return resultTVShowDtoList;
+        return resultListTVShowDto;
     }
 
 

@@ -243,7 +243,7 @@ public class ClientServiceImpl implements IClientService {
         else if (optionalClientDatabase.isPresent() & client.getFollowedMovie() != null ){
 
             client = updateClientFollowedMovie(client);
-        // Client already in database so we update the client in database with the followedTVShow
+            // Client already in database so we update the client in database with the followedTVShow
         } else if (client.getFollowedTVShow() != null) {
 
             client = updateClientFollowedTVShow(client);
@@ -297,24 +297,24 @@ public class ClientServiceImpl implements IClientService {
 
             if (followedTVShow.getViewingStatus().equals(StatusOfViewing.UNFOLLOW.text)){
 
-                    // remove the followedTV from the list
-                    followedTVShows.remove(indexFollowedTVShow);
+                // remove the followedTV from the list
+                followedTVShows.remove(indexFollowedTVShow);
 
-                    logger.info("followedTVShow removed from the list");
+                logger.info("followedTVShow removed from the list");
 
-                }
+            }
 
-                else {
+            else {
 
-                    // update the followedTVShow with the new data
-                    followedTVShows.get(indexFollowedTVShow).setMyScore(followedTVShow.getMyScore());
-                    followedTVShows.get(indexFollowedTVShow).setViewingStatus(followedTVShow.getViewingStatus());
-                    followedTVShows.get(indexFollowedTVShow).setOngoingSeason(followedTVShow.getOngoingSeason());
-                    followedTVShows.get(indexFollowedTVShow).setOngoingEpisode(followedTVShow.getOngoingEpisode());
+                // update the followedTVShow with the new data
+                followedTVShows.get(indexFollowedTVShow).setMyScore(followedTVShow.getMyScore());
+                followedTVShows.get(indexFollowedTVShow).setViewingStatus(followedTVShow.getViewingStatus());
+                followedTVShows.get(indexFollowedTVShow).setOngoingSeason(followedTVShow.getOngoingSeason());
+                followedTVShows.get(indexFollowedTVShow).setOngoingEpisode(followedTVShow.getOngoingEpisode());
 
-                    logger.info("followedTVShow updated with the new data");
+                logger.info("followedTVShow updated with the new data");
 
-                }
+            }
 
         } else {
 

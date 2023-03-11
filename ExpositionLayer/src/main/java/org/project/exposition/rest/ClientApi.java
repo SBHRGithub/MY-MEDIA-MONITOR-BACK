@@ -33,11 +33,11 @@ public class ClientApi {
 
     @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/get/movie")
-    public List<ResultMovieDto> findFollowedMovie(@RequestParam String email,
-                                                    @RequestParam Optional<String> title,
-                                                    @RequestParam Optional<String> mediaType,
-                                                    @RequestParam Optional<String> viewingStatus,
-                                                    @RequestParam Optional<Integer> myScore) {
+    public ResultListMovieDto findFollowedMovie(@RequestParam String email,
+                                                @RequestParam Optional<String> title,
+                                                @RequestParam Optional<String> mediaType,
+                                                @RequestParam Optional<String> viewingStatus,
+                                                @RequestParam Optional<Integer> myScore) {
 
         logger.debug("DEBUG---email = {}",email);
         logger.debug("DEBUG---title = {}",title.isPresent());
@@ -50,7 +50,7 @@ public class ClientApi {
 
         Client client=service.findClient(email,title,mediaType,viewingStatus, myScore);
 
-        List<ResultMovieDto> results=mapper.convertClientToResultMovieDto(client);
+        ResultListMovieDto results=mapper.convertClientToResultListMovieDto(client);
 
         return results;
     }
@@ -59,11 +59,11 @@ public class ClientApi {
 
     @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/get/tv")
-    public List<ResultTVShowDto> findFollowedTVShow(@RequestParam String email,
-                       @RequestParam Optional<String> name,
-                       @RequestParam Optional<String> mediaType,
-                       @RequestParam Optional<String> viewingStatus,
-                       @RequestParam Optional<Integer> myScore) {
+    public ResultListTVShowDto findFollowedTVShow(@RequestParam String email,
+                                                  @RequestParam Optional<String> name,
+                                                  @RequestParam Optional<String> mediaType,
+                                                  @RequestParam Optional<String> viewingStatus,
+                                                  @RequestParam Optional<Integer> myScore) {
 
         logger.debug("DEBUG---email = {}",email);
         logger.debug("DEBUG---title = {}",name.isPresent());
@@ -76,7 +76,7 @@ public class ClientApi {
 
         Client client=service.findClient(email,name,mediaType,viewingStatus, myScore);
 
-        List<ResultTVShowDto> results=mapper.convertClientToResultTVShowDto(client);
+        ResultListTVShowDto results=mapper.convertClientToResultListTVShowDto(client);
 
         return results;
     }
