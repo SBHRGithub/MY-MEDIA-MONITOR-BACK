@@ -3,6 +3,8 @@ package org.project.exposition.rest;
 
 
 import org.project.domain.Client;
+import org.project.domain.FollowedMovie;
+import org.project.domain.FollowedTVShow;
 import org.project.exposition.dto.*;
 import org.project.exposition.mapper.ClientMapper;
 import org.project.service.IClientService;
@@ -48,9 +50,9 @@ public class ClientApi {
 
         logger.info("findFollowedMovie client : {}",email);
 
-        Client client=service.findClient(email,title,mediaType,viewingStatus, myScore);
+        List< FollowedMovie> followedMovies =service.findFollowedMovie(email,title,mediaType,viewingStatus, myScore);
 
-        ResultListMovieDto results=mapper.convertClientToResultListMovieDto(client);
+        ResultListMovieDto results=mapper.convertClientToResultListMovieDto(followedMovies);
 
         return results;
     }
@@ -66,7 +68,7 @@ public class ClientApi {
                                                   @RequestParam Optional<Integer> myScore) {
 
         logger.debug("DEBUG---email = {}",email);
-        logger.debug("DEBUG---title = {}",name.isPresent());
+        logger.debug("DEBUG---name = {}",name.isPresent());
         logger.debug("DEBUG---mediaType = {}",mediaType.isPresent());
         logger.debug("DEBUG---viewingStatus = {}",viewingStatus.isPresent());
         logger.debug("DEBUG---myScore = {}",myScore.isPresent());
@@ -74,9 +76,9 @@ public class ClientApi {
 
         logger.info("findFollowedTVShow client : {}",email);
 
-        Client client=service.findClient(email,name,mediaType,viewingStatus, myScore);
+        List< FollowedTVShow> followedTVShows =service.findFollowedTVShow(email,name,mediaType,viewingStatus, myScore);
 
-        ResultListTVShowDto results=mapper.convertClientToResultListTVShowDto(client);
+        ResultListTVShowDto results=mapper.convertClientToResultListTVShowDto(followedTVShows);
 
         return results;
     }

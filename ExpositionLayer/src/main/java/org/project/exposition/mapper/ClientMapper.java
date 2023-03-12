@@ -34,24 +34,24 @@ public class ClientMapper {
     }
 
 
-    public ResultListMovieDto convertClientToResultListMovieDto(Client client){
+    public ResultListMovieDto convertClientToResultListMovieDto(List<FollowedMovie> followedMovies){
 
         ResultListMovieDto resultListMovieDto = new ResultListMovieDto();
 
         List<ResultMovieDto> resultMovieDtoList = new ArrayList<>();
 
 
-        if (!(client.getFollowedMovie()==null)) {
+        if (!(followedMovies==null)) {
 
-            for (int i=0;i<client.getFollowedMovie().size();i++){
+            for (int i=0;i< followedMovies.size();i++){
 
                 ResultMovieDto resultMovieDto = new ResultMovieDto();
 
-                resultMovieDto.setExternalId(client.getFollowedMovie().get(i).getMovie().getExternalId());
-                resultMovieDto.setTitle(client.getFollowedMovie().get(i).getMovie().getTitle());
-                resultMovieDto.setMediaType(client.getFollowedMovie().get(i).getMovie().getMediaType());
-                resultMovieDto.setViewingStatus(client.getFollowedMovie().get(i).getViewingStatus());
-                resultMovieDto.setMyScore((client.getFollowedMovie().get(i).getMyScore()));
+                resultMovieDto.setExternalId(followedMovies.get(i).getMovie().getExternalId());
+                resultMovieDto.setTitle(followedMovies.get(i).getMovie().getTitle());
+                resultMovieDto.setMediaType(followedMovies.get(i).getMovie().getMediaType());
+                resultMovieDto.setViewingStatus(followedMovies.get(i).getViewingStatus());
+                resultMovieDto.setMyScore((followedMovies.get(i).getMyScore()));
 
                 resultMovieDtoList.add(resultMovieDto);
 
@@ -65,25 +65,25 @@ public class ClientMapper {
 
 
 
-    public ResultListTVShowDto convertClientToResultListTVShowDto(Client client){
+    public ResultListTVShowDto convertClientToResultListTVShowDto(List<FollowedTVShow> followedTVShows){
 
         ResultListTVShowDto resultListTVShowDto= new ResultListTVShowDto();
 
         List<ResultTVShowDto> resultTVShowDtoList = new ArrayList<>();
 
 
-        if (!(client.getFollowedTVShow()==null)) {
-            for (int i=0;i<client.getFollowedTVShow().size();i++){
+        if (!(followedTVShows==null)) {
+            for (int i=0;i<followedTVShows.size();i++){
 
                 ResultTVShowDto resultTVShowDto = new ResultTVShowDto();
 
-                resultTVShowDto.setExternalId(client.getFollowedTVShow().get(i).getTvShow().getExternalId());
-                resultTVShowDto.setName(client.getFollowedTVShow().get(i).getTvShow().getName());
-                resultTVShowDto.setMediaType(client.getFollowedTVShow().get(i).getTvShow().getMediaType());
-                resultTVShowDto.setViewingStatus(client.getFollowedTVShow().get(i).getViewingStatus());
-                resultTVShowDto.setMyScore((client.getFollowedTVShow().get(i).getMyScore()));
-                resultTVShowDto.setOngoingSeason(client.getFollowedTVShow().get(i).getOngoingSeason());
-                resultTVShowDto.setOngoingEpisode(client.getFollowedTVShow().get(i).getOngoingEpisode());
+                resultTVShowDto.setExternalId(followedTVShows.get(i).getTvShow().getExternalId());
+                resultTVShowDto.setName(followedTVShows.get(i).getTvShow().getName());
+                resultTVShowDto.setMediaType(followedTVShows.get(i).getTvShow().getMediaType());
+                resultTVShowDto.setViewingStatus(followedTVShows.get(i).getViewingStatus());
+                resultTVShowDto.setMyScore((followedTVShows.get(i).getMyScore()));
+                resultTVShowDto.setOngoingSeason(followedTVShows.get(i).getOngoingSeason());
+                resultTVShowDto.setOngoingEpisode(followedTVShows.get(i).getOngoingEpisode());
 
                 resultTVShowDtoList.add(resultTVShowDto);
 

@@ -77,6 +77,138 @@ public class ClientServiceImpl implements IClientService {
 
 
 
+    @Override
+    public List<FollowedMovie> findFollowedMovie(String email, Optional<String> title, Optional<String> mediaType, Optional<String> viewingStatus, Optional<Integer> myScore) {
+
+        // Get all the data about the client
+        optionalClientDatabase = repoClient.findByEmail(email);
+        logger.debug("service findClient {}", email);
+
+        Client client=new Client();
+
+        if (optionalClientDatabase.isPresent()) {
+
+            logger.info("client found in database : {}",email);
+
+            client = optionalClientDatabase.get();
+
+            followedMovies = optionalClientDatabase.get().getFollowedMovie();
+
+
+            // filter followedMovies by title
+            if (!(title.get().isBlank())) {
+
+                logger.info("followedMovies filter by title : {}",title.get());
+
+                followedMovies = followedMovies.stream()
+                        .filter(f -> f.getMovie().getTitle().toLowerCase().equals(title.get().toLowerCase()))
+                        .collect(Collectors.toList());
+
+            }
+
+
+
+            // filter followedMovies by viewingStatus
+            if (!(viewingStatus.get().isBlank())) {
+
+                logger.info("followedMovies filter by viewingStatus : {}",viewingStatus.get());
+
+                followedMovies = followedMovies.stream()
+                        .filter(f -> f.getViewingStatus().equals(viewingStatus.get()))
+                        .collect(Collectors.toList());
+
+            }
+
+            // filter followedMovies and followedTVShows by myScore
+            if (!(myScore.isEmpty())) {
+
+                logger.info("followedMovies filter by myScore : {}",myScore.get());
+
+                followedMovies = followedMovies.stream()
+                        .filter(f-> f.getMyScore().equals(myScore.get()))
+                        .collect(Collectors.toList());
+
+            }
+
+
+        }
+
+
+        return followedMovies;
+
+    }
+
+
+    public List<FollowedTVShow> findFollowedTVShow(String email, Optional<String> name, Optional<String> mediaType, Optional<String> viewingStatus, Optional<Integer> myScore) {
+
+        // Get all the data about the client
+        optionalClientDatabase = repoClient.findByEmail(email);
+        logger.debug("service findClient {}", email);
+
+        Client client=new Client();
+
+        if (optionalClientDatabase.isPresent()) {
+
+            logger.info("client found in database : {}",email);
+
+            client = optionalClientDatabase.get();
+
+
+            followedTVShows = optionalClientDatabase.get().getFollowedTVShow();
+
+            // filter followedTVShows by name
+            if (!(name.get().isBlank())) {
+
+                logger.info("followedTVShow filter by name : {}",name.get());
+
+
+                followedTVShows = followedTVShows.stream()
+                        .filter(f -> f.getTvShow().getName().toLowerCase().equals(name.get().toLowerCase()))
+                        .collect(Collectors.toList());
+
+
+            }
+
+
+
+            // filter followedTVShows by viewingStatus
+            if (!(viewingStatus.get().isBlank())) {
+
+                logger.info("followedTVShow filter by viewingStatus : {}",viewingStatus.get());
+
+
+
+                followedTVShows = followedTVShows.stream()
+                        .filter(f -> f.getViewingStatus().equals(viewingStatus.get()))
+                        .collect(Collectors.toList());
+
+
+
+            }
+
+            // filter followedTVShows by myScore
+            if (!(myScore.isEmpty())) {
+
+                logger.info("followedTVShow filter by myScore : {}",myScore.get());
+
+
+
+                followedTVShows = followedTVShows.stream()
+                        .filter(f -> f.getMyScore().equals(myScore.get()))
+                        .collect(Collectors.toList());
+
+
+
+            }
+
+        }
+
+
+        return followedTVShows;
+
+    }
+
+
 
     public Client findClient(String email, Optional<String> title, Optional<String> mediaType, Optional<String> viewingStatus, Optional<Integer> myScore)
     {
@@ -98,7 +230,7 @@ public class ClientServiceImpl implements IClientService {
             followedTVShows = optionalClientDatabase.get().getFollowedTVShow();
 
             // filter followedMovies and followedTVShows by title
-            if (title.isPresent()) {
+            if (!(title.get().isBlank())) {
 
                 logger.info("followedMovies filter by title : {}",title.get());
 
@@ -114,8 +246,10 @@ public class ClientServiceImpl implements IClientService {
 
             }
 
+
+
             // filter followedMovies and followedTVShows by viewingStatus
-            if (viewingStatus.isPresent()) {
+            if (!(viewingStatus.get().isBlank())) {
 
                 logger.info("followedMovies filter by viewingStatus : {}",viewingStatus.get());
 
@@ -132,7 +266,7 @@ public class ClientServiceImpl implements IClientService {
             }
 
             // filter followedMovies and followedTVShows by myScore
-            if (myScore.isPresent()) {
+            if (!(myScore.isEmpty())) {
 
                 logger.info("followedMovies filter by myScore : {}",myScore.get());
 
@@ -150,7 +284,8 @@ public class ClientServiceImpl implements IClientService {
 
             // filter followedMovies and followedTVShows by mediaType
 
-            if (mediaType.isPresent()) {
+            /*
+            if (!(mediaType.get().isBlank())) {
 
                 logger.info("followedMovies filter by mediaType : {}",mediaType.get());
 
@@ -164,8 +299,11 @@ public class ClientServiceImpl implements IClientService {
 
                 }
 
-            }
 
+
+
+            }
+            */
 
 
         }
