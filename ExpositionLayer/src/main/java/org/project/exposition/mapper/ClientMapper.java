@@ -163,14 +163,14 @@ public class ClientMapper {
         if (dto.getOngoingSeason().isEmpty()){
             followedTVShow.setOngoingSeason(0);
         } else {
-            followedTVShow.setMyScore(dto.getMyScore().get());
+            followedTVShow.setOngoingSeason(dto.getOngoingSeason().get());
         };
 
 
         if (dto.getOngoingEpisode().isEmpty()){
             followedTVShow.setOngoingEpisode(0);
         } else {
-            followedTVShow.setMyScore(dto.getMyScore().get());
+            followedTVShow.setOngoingEpisode(dto.getOngoingEpisode().get());
         }
 
 

@@ -2391,3 +2391,868 @@ java.util.NoSuchElementException: No value present
 2023-03-12 14:14:49.616  INFO 20108 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
 2023-03-12 14:15:20.444  INFO 20108 --- [http-nio-8080-exec-8] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
 2023-03-12 14:15:20.446  INFO 20108 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 14:21:50.887  INFO 20108 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-12 14:21:50.890  INFO 20108 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 14:25:43.921  INFO 20108 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : findFollowedMovie client : a@free.fr
+2023-03-12 14:25:43.925  INFO 20108 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 14:25:43.925  INFO 20108 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : followedMovies filter by title : avatar
+2023-03-12 14:25:43.928  INFO 20108 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : followedMovies filter by viewingStatus : Ongoing
+2023-03-12 14:26:52.570  INFO 20108 --- [http-nio-8080-exec-7] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 14:26:52.572  INFO 20108 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 14:26:52.572  INFO 20108 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : followedTVShow filter by viewingStatus : Not seen
+2023-03-12 14:31:14.780  INFO 20108 --- [http-nio-8080-exec-10] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 14:31:14.782  INFO 20108 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 14:31:14.783  INFO 20108 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : followedTVShow filter by name : tvshow1
+2023-03-12 14:52:26.676  INFO 20108 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 14:52:26.769  INFO 20108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-12 14:52:26.818  INFO 20108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-12 14:52:33.881  INFO 2420 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 2420 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-12 14:52:33.887  INFO 2420 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-12 14:52:35.161  INFO 2420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 14:52:35.268  INFO 2420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 4 JPA repository interfaces.
+2023-03-12 14:52:36.596  INFO 2420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-12 14:52:36.623  INFO 2420 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-12 14:52:36.624  INFO 2420 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 14:52:36.843  INFO 2420 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-12 14:52:36.843  INFO 2420 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2862 ms
+2023-03-12 14:52:37.152  INFO 2420 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 14:52:37.264  INFO 2420 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 14:52:37.540  INFO 2420 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 14:52:37.709  INFO 2420 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-12 14:52:37.863  INFO 2420 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-12 14:52:37.905  INFO 2420 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-12 14:52:38.986  INFO 2420 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 14:52:38.997  INFO 2420 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 14:52:39.865  WARN 2420 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 14:52:40.495  INFO 2420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 14:52:40.852  INFO 2420 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 7.634 seconds (JVM running for 8.208)
+2023-03-12 15:03:05.220  INFO 2420 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-12 15:03:05.220  INFO 2420 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-12 15:03:05.222  INFO 2420 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-12 15:03:05.275  INFO 2420 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : findFollowedMovie client : a@free.fr
+2023-03-12 15:03:05.588  INFO 2420 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 15:03:05.588  INFO 2420 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : followedMovies filter by title : avatar
+2023-03-12 15:03:05.614  INFO 2420 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : followedMovies filter by viewingStatus : Ongoing
+2023-03-12 15:03:05.614  INFO 2420 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : followedMovies filter by myScore : 4
+2023-03-12 15:14:28.979  INFO 2420 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : save client : b@free.fr
+2023-03-12 15:14:29.040  INFO 2420 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : followedMovie added to the list
+2023-03-12 15:14:29.496  INFO 2420 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 15:15:17.379  INFO 2420 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : findFollowedMovie client : b@free.fr
+2023-03-12 15:15:17.387  INFO 2420 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:16:48.004  INFO 2420 --- [http-nio-8080-exec-6] org.project.exposition.rest.ClientApi    : findFollowedMovie client : a@free.fr
+2023-03-12 15:16:48.007  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 15:16:48.007  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : followedMovies filter by viewingStatus : Ongoing
+2023-03-12 15:16:48.010  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : followedMovies filter by myScore : 3
+2023-03-12 15:16:56.839  INFO 2420 --- [http-nio-8080-exec-9] org.project.exposition.rest.ClientApi    : findFollowedMovie client : a@free.fr
+2023-03-12 15:16:56.841  INFO 2420 --- [http-nio-8080-exec-9] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 15:16:56.842  INFO 2420 --- [http-nio-8080-exec-9] org.project.service.ClientServiceImpl    : followedMovies filter by viewingStatus : Ongoing
+2023-03-12 15:16:56.844  INFO 2420 --- [http-nio-8080-exec-9] org.project.service.ClientServiceImpl    : followedMovies filter by myScore : 6
+2023-03-12 15:17:09.164  INFO 2420 --- [http-nio-8080-exec-7] org.project.exposition.rest.ClientApi    : findFollowedMovie client : a@free.fr
+2023-03-12 15:17:09.168  INFO 2420 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 15:17:09.168  INFO 2420 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : followedMovies filter by viewingStatus : Viewed
+2023-03-12 15:17:09.171  INFO 2420 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : followedMovies filter by myScore : 6
+2023-03-12 15:17:11.054  INFO 2420 --- [http-nio-8080-exec-5] org.project.exposition.rest.ClientApi    : findFollowedMovie client : a@free.fr
+2023-03-12 15:17:11.056  INFO 2420 --- [http-nio-8080-exec-5] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 15:17:11.057  INFO 2420 --- [http-nio-8080-exec-5] org.project.service.ClientServiceImpl    : followedMovies filter by viewingStatus : Viewed
+2023-03-12 15:17:11.059  INFO 2420 --- [http-nio-8080-exec-5] org.project.service.ClientServiceImpl    : followedMovies filter by myScore : 6
+2023-03-12 15:17:18.797  INFO 2420 --- [http-nio-8080-exec-8] org.project.exposition.rest.ClientApi    : findFollowedMovie client : b@free.fr
+2023-03-12 15:17:18.801  INFO 2420 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:17:18.801  INFO 2420 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : followedMovies filter by viewingStatus : Viewed
+2023-03-12 15:17:18.805  INFO 2420 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : followedMovies filter by myScore : 6
+2023-03-12 15:18:59.143  INFO 2420 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:18:59.146  INFO 2420 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:18:59.174 ERROR 2420 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at org.project.service.ClientServiceImpl.findFollowedTVShow(ClientServiceImpl.java:160) ~[classes/:na]
+	at org.project.exposition.rest.ClientApi.findFollowedTVShow(ClientApi.java:79) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-03-12 15:19:17.552  INFO 2420 --- [http-nio-8080-exec-4] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:19:17.555  INFO 2420 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:19:17.556  INFO 2420 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : followedTVShow filter by name : tvshow1
+2023-03-12 15:19:17.565  INFO 2420 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : followedTVShow filter by viewingStatus : Ongoing
+2023-03-12 15:20:14.205  INFO 2420 --- [http-nio-8080-exec-6] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:20:14.207  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:20:14.207  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : followedTVShow filter by name : tvshow1
+2023-03-12 15:20:14.209  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : followedTVShow filter by viewingStatus : Ongoing
+2023-03-12 15:20:14.211  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : followedTVShow filter by myScore : 2
+2023-03-12 15:20:56.248  INFO 2420 --- [http-nio-8080-exec-9] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:20:56.250  INFO 2420 --- [http-nio-8080-exec-9] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:20:56.251  INFO 2420 --- [http-nio-8080-exec-9] org.project.service.ClientServiceImpl    : followedTVShow filter by viewingStatus : Not seen
+2023-03-12 15:20:56.253  INFO 2420 --- [http-nio-8080-exec-9] org.project.service.ClientServiceImpl    : followedTVShow filter by myScore : 1
+2023-03-12 15:23:28.695  INFO 2420 --- [http-nio-8080-exec-8] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:23:28.707  INFO 2420 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:23:28.708  INFO 2420 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : followedTVShow filter by name : tvshow1
+2023-03-12 15:23:28.719  INFO 2420 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : followedTVShow filter by viewingStatus : Ongoing
+2023-03-12 15:23:28.719  INFO 2420 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : followedTVShow filter by myScore : 1
+2023-03-12 15:23:34.017  INFO 2420 --- [http-nio-8080-exec-10] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:23:34.020  INFO 2420 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:23:34.020  INFO 2420 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : followedTVShow filter by name : tvshow1
+2023-03-12 15:23:34.022  INFO 2420 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : followedTVShow filter by viewingStatus : Ongoing
+2023-03-12 15:23:34.023  INFO 2420 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : followedTVShow filter by myScore : 2
+2023-03-12 15:23:38.552  INFO 2420 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:23:38.557  INFO 2420 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:23:38.557  INFO 2420 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : followedTVShow filter by name : tvshow1
+2023-03-12 15:23:38.559  INFO 2420 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : followedTVShow filter by viewingStatus : Ongoing
+2023-03-12 15:23:38.559  INFO 2420 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : followedTVShow filter by myScore : 6
+2023-03-12 15:23:49.090  INFO 2420 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-12 15:23:49.094  INFO 2420 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 15:23:53.771  INFO 2420 --- [http-nio-8080-exec-3] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-12 15:23:53.774  INFO 2420 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 15:24:01.645  INFO 2420 --- [http-nio-8080-exec-4] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:24:01.647  INFO 2420 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:24:16.548  INFO 2420 --- [http-nio-8080-exec-6] org.project.exposition.rest.ClientApi    : findFollowedMovie client : b@free.fr
+2023-03-12 15:24:16.551  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:28:46.023  INFO 2420 --- [http-nio-8080-exec-5] org.project.exposition.rest.ClientApi    : save client : a@free.fr
+2023-03-12 15:28:46.049  INFO 2420 --- [http-nio-8080-exec-5] org.project.service.ClientServiceImpl    : tv show found in the database
+2023-03-12 15:28:46.052  INFO 2420 --- [http-nio-8080-exec-5] org.project.service.ClientServiceImpl    : followedTVShow added to the list
+2023-03-12 15:28:46.087  INFO 2420 --- [http-nio-8080-exec-5] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 15:29:09.608  INFO 2420 --- [http-nio-8080-exec-8] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-12 15:29:09.610  INFO 2420 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 15:32:50.076  INFO 2420 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : save client : a@free.fr
+2023-03-12 15:32:50.082  INFO 2420 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : tv show found in the database
+2023-03-12 15:32:50.087  INFO 2420 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : followedTVShow found in database
+2023-03-12 15:32:50.087  INFO 2420 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : followedTVShow removed from the list
+2023-03-12 15:32:50.099  INFO 2420 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 15:32:57.883  INFO 2420 --- [http-nio-8080-exec-3] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-12 15:32:57.885  INFO 2420 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 15:38:30.168  INFO 2420 --- [http-nio-8080-exec-6] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:38:30.171  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:38:30.172  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : followedTVShow filter by viewingStatus : Not seen
+2023-03-12 15:38:30.175  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : followedTVShow filter by myScore : 1
+2023-03-12 15:40:20.899  INFO 2420 --- [http-nio-8080-exec-8] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:40:20.902  INFO 2420 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:40:20.902  INFO 2420 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : followedTVShow filter by name : tvshow1
+2023-03-12 15:40:20.905  INFO 2420 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : followedTVShow filter by viewingStatus : Ongoing
+2023-03-12 15:40:20.905  INFO 2420 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : followedTVShow filter by myScore : 2
+2023-03-12 15:40:24.513  INFO 2420 --- [http-nio-8080-exec-10] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:40:24.516  INFO 2420 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:40:24.517  INFO 2420 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : followedTVShow filter by name : tvshow1
+2023-03-12 15:40:24.518  INFO 2420 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : followedTVShow filter by viewingStatus : Ongoing
+2023-03-12 15:40:24.519  INFO 2420 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : followedTVShow filter by myScore : 6
+2023-03-12 15:40:30.000  INFO 2420 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:40:30.003  INFO 2420 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:40:30.003  INFO 2420 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : followedTVShow filter by name : tvshow1
+2023-03-12 15:40:30.005  INFO 2420 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : followedTVShow filter by viewingStatus : Ongoing
+2023-03-12 15:40:44.145  INFO 2420 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:40:44.148  INFO 2420 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:40:44.148  INFO 2420 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : followedTVShow filter by viewingStatus : Not seen
+2023-03-12 15:40:52.528  INFO 2420 --- [http-nio-8080-exec-3] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:40:52.530  INFO 2420 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:40:52.532  INFO 2420 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : followedTVShow filter by myScore : 1
+2023-03-12 15:50:49.829  INFO 2420 --- [http-nio-8080-exec-6] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:50:49.849  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:50:49.849  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : followedTVShow filter by name : tvshow1
+2023-03-12 15:50:49.858  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : followedTVShow filter by viewingStatus : Ongoing
+2023-03-12 15:50:49.859  INFO 2420 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : followedTVShow filter by myScore : 6
+2023-03-12 15:51:04.247  INFO 2420 --- [http-nio-8080-exec-7] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-12 15:51:04.249  INFO 2420 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 15:51:07.398  INFO 2420 --- [http-nio-8080-exec-5] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-12 15:51:07.404  INFO 2420 --- [http-nio-8080-exec-5] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 15:51:13.899  INFO 2420 --- [http-nio-8080-exec-8] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:51:13.902  INFO 2420 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:51:49.212  INFO 2420 --- [http-nio-8080-exec-10] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 15:51:49.224  INFO 2420 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 15:51:57.644  INFO 2420 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-12 15:51:57.649  INFO 2420 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 15:58:24.891  INFO 2420 --- [http-nio-8080-exec-3] org.project.exposition.rest.ClientApi    : findFollowedMovie client : b@free.fr
+2023-03-12 15:58:24.904  INFO 2420 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 16:01:39.223  INFO 2420 --- [http-nio-8080-exec-7] org.project.exposition.rest.ClientApi    : save client : b@free.fr
+2023-03-12 16:01:39.237  INFO 2420 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : movie found in the database
+2023-03-12 16:01:39.241  INFO 2420 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : followedMovie removed from the list
+2023-03-12 16:01:39.262  INFO 2420 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 16:01:52.327  INFO 2420 --- [http-nio-8080-exec-5] org.project.exposition.rest.ClientApi    : findFollowedMovie client : b@free.fr
+2023-03-12 16:01:52.330  INFO 2420 --- [http-nio-8080-exec-5] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 16:15:21.589  INFO 2420 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 16:15:21.617  INFO 2420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-12 16:15:21.635  INFO 2420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-12 16:15:29.658  INFO 424 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 424 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-12 16:15:29.664  INFO 424 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-12 16:15:31.182  INFO 424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 16:15:31.325  INFO 424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 4 JPA repository interfaces.
+2023-03-12 16:15:32.591  INFO 424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-12 16:15:32.614  INFO 424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-12 16:15:32.615  INFO 424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 16:15:32.855  INFO 424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-12 16:15:32.856  INFO 424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3101 ms
+2023-03-12 16:15:33.231  INFO 424 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 16:15:33.345  INFO 424 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 16:15:33.617  INFO 424 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 16:15:33.798  INFO 424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-12 16:15:33.993  INFO 424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-12 16:15:34.040  INFO 424 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-12 16:15:35.542  INFO 424 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 16:15:35.554  INFO 424 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 16:15:36.792  WARN 424 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 16:15:37.785  INFO 424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 16:15:38.411  INFO 424 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 9.566 seconds (JVM running for 10.259)
+2023-03-12 16:16:57.738  INFO 424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-12 16:16:57.739  INFO 424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-12 16:16:57.741  INFO 424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-12 16:16:57.919  INFO 424 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : save client : a@free.fr
+2023-03-12 16:16:58.299  INFO 424 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : movie found in the database
+2023-03-12 16:16:58.330  INFO 424 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : followedMovie removed from the list
+2023-03-12 16:16:58.422  INFO 424 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 16:30:25.920  INFO 424 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 16:30:25.926  INFO 424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-12 16:30:25.932  INFO 424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-12 16:30:34.862  INFO 15920 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 15920 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-12 16:30:34.868  INFO 15920 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-12 16:30:36.458  INFO 15920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 16:30:36.600  INFO 15920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 5 JPA repository interfaces.
+2023-03-12 16:30:37.743  INFO 15920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-12 16:30:37.759  INFO 15920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-12 16:30:37.760  INFO 15920 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 16:30:38.001  INFO 15920 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-12 16:30:38.002  INFO 15920 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3030 ms
+2023-03-12 16:30:38.457  INFO 15920 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 16:30:38.617  INFO 15920 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 16:30:39.031  INFO 15920 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 16:30:39.282  INFO 15920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-12 16:30:39.491  INFO 15920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-12 16:30:39.533  INFO 15920 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-12 16:30:40.931  INFO 15920 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 16:30:40.943  INFO 15920 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 16:30:42.263  WARN 15920 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 16:30:43.324  INFO 15920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 16:30:43.930  INFO 15920 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 9.868 seconds (JVM running for 10.484)
+2023-03-12 16:31:47.967  INFO 15920 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 16:31:47.969  INFO 15920 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-12 16:31:47.977  INFO 15920 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-12 16:31:51.838  INFO 16744 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 16744 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-12 16:31:51.843  INFO 16744 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-12 16:31:53.258  INFO 16744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 16:31:53.389  INFO 16744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 5 JPA repository interfaces.
+2023-03-12 16:31:54.493  INFO 16744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-12 16:31:54.510  INFO 16744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-12 16:31:54.510  INFO 16744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 16:31:54.746  INFO 16744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-12 16:31:54.747  INFO 16744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2822 ms
+2023-03-12 16:31:55.154  INFO 16744 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 16:31:55.321  INFO 16744 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 16:31:55.724  INFO 16744 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 16:31:56.002  INFO 16744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-12 16:31:56.201  INFO 16744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-12 16:31:56.250  INFO 16744 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-12 16:31:57.767  WARN 16744 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-03-12 16:31:57.767  WARN 16744 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : la contrainte « uk_l09ry1qrfi8gyogltixr412o6 » de la relation « client_followed_movies » n'existe pas, ignore
+2023-03-12 16:31:57.779  WARN 16744 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-03-12 16:31:57.779  WARN 16744 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : la contrainte « uk_68rs5jodsa8xxdohv7g9ekhoo » de la relation « client_followedtvshows » n'existe pas, ignore
+2023-03-12 16:31:57.812  INFO 16744 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 16:31:57.827  INFO 16744 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 16:31:58.916  WARN 16744 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 16:31:59.663  INFO 16744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 16:32:00.090  INFO 16744 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 8.919 seconds (JVM running for 9.534)
+2023-03-12 16:33:25.480  INFO 16744 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-12 16:33:25.481  INFO 16744 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-12 16:33:25.485  INFO 16744 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-03-12 16:33:25.683  INFO 16744 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : save client : a@free.fr
+2023-03-12 16:33:35.757  INFO 16744 --- [http-nio-8080-exec-3] org.project.exposition.rest.ClientApi    : findFollowedMovie client : b@free.fr
+2023-03-12 16:34:16.390  INFO 16744 --- [http-nio-8080-exec-4] org.project.exposition.rest.ClientApi    : findFollowedMovie client : a@free.fr
+2023-03-12 16:34:16.400  INFO 16744 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 16:34:49.608  INFO 16744 --- [http-nio-8080-exec-5] org.project.exposition.rest.ClientApi    : save client : a@free.fr
+2023-03-12 16:34:49.613  INFO 16744 --- [http-nio-8080-exec-5] org.project.service.ClientServiceImpl    : followedMovie added to the list
+2023-03-12 16:34:49.625  INFO 16744 --- [http-nio-8080-exec-5] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 16:34:56.185  INFO 16744 --- [http-nio-8080-exec-6] org.project.exposition.rest.ClientApi    : findFollowedMovie client : a@free.fr
+2023-03-12 16:34:56.188  INFO 16744 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 16:35:33.579  INFO 16744 --- [http-nio-8080-exec-7] org.project.exposition.rest.ClientApi    : save client : a@free.fr
+2023-03-12 16:35:33.587  INFO 16744 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : followedMovie added to the list
+2023-03-12 16:35:33.596  INFO 16744 --- [http-nio-8080-exec-7] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 16:35:39.121  INFO 16744 --- [http-nio-8080-exec-8] org.project.exposition.rest.ClientApi    : findFollowedMovie client : a@free.fr
+2023-03-12 16:35:39.123  INFO 16744 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 16:36:25.684  INFO 16744 --- [http-nio-8080-exec-9] org.project.exposition.rest.ClientApi    : save client : a@free.fr
+2023-03-12 16:36:25.688  INFO 16744 --- [http-nio-8080-exec-9] org.project.service.ClientServiceImpl    : movie found in the database
+2023-03-12 16:36:25.702 ERROR 16744 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "org.project.infrastructure.IFollowedMovieRepository.deleteById(Object)" because "this.repoFollowedMovie" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.project.infrastructure.IFollowedMovieRepository.deleteById(Object)" because "this.repoFollowedMovie" is null
+	at org.project.service.ClientServiceImpl.updateClientFollowedMovie(ClientServiceImpl.java:526) ~[classes/:na]
+	at org.project.service.ClientServiceImpl.update(ClientServiceImpl.java:386) ~[classes/:na]
+	at org.project.exposition.rest.ClientApi.create(ClientApi.java:96) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-03-12 16:37:50.344  INFO 16744 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 16:37:50.348  INFO 16744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-12 16:37:50.369  INFO 16744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-12 16:37:58.430  INFO 18248 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 18248 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-12 16:37:58.436  INFO 18248 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-12 16:37:59.826  INFO 18248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 16:37:59.963  INFO 18248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 5 JPA repository interfaces.
+2023-03-12 16:38:01.192  INFO 18248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-12 16:38:01.213  INFO 18248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-12 16:38:01.213  INFO 18248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 16:38:01.422  INFO 18248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-12 16:38:01.423  INFO 18248 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2906 ms
+2023-03-12 16:38:01.734  INFO 18248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 16:38:01.858  INFO 18248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 16:38:02.164  INFO 18248 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 16:38:02.391  INFO 18248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-12 16:38:02.652  INFO 18248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-12 16:38:02.685  INFO 18248 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-12 16:38:03.931  INFO 18248 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 16:38:03.945  INFO 18248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 16:38:05.262  WARN 18248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 16:38:06.168  INFO 18248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 16:38:06.773  INFO 18248 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 9.145 seconds (JVM running for 9.887)
+2023-03-12 16:38:44.818  INFO 18248 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-12 16:38:44.819  INFO 18248 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-12 16:38:44.821  INFO 18248 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-12 16:38:44.964  INFO 18248 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : save client : a@free.fr
+2023-03-12 16:38:45.267  INFO 18248 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : movie found in the database
+2023-03-12 16:38:45.321 ERROR 18248 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class org.project.domain.FollowedMovie. Expected: class java.lang.Long, got class java.lang.Integer; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class org.project.domain.FollowedMovie. Expected: class java.lang.Long, got class java.lang.Integer] with root cause
+
+org.hibernate.TypeMismatchException: Provided id of the wrong type for class org.project.domain.FollowedMovie. Expected: class java.lang.Long, got class java.lang.Integer
+	at org.hibernate.event.internal.DefaultLoadEventListener.checkIdClass(DefaultLoadEventListener.java:155) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:71) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1231) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1220) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:202) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2848) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2825) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2781) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2825) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3413) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3380) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362) ~[spring-orm-5.3.24.jar:5.3.24]
+	at jdk.proxy2/jdk.proxy2.$Proxy85.find(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-5.3.24.jar:5.3.24]
+	at jdk.proxy2/jdk.proxy2.$Proxy85.find(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:335) ~[spring-data-jpa-2.7.6.jar:2.7.6]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById(SimpleJpaRepository.java:172) ~[spring-data-jpa-2.7.6.jar:2.7.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:530) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:286) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:640) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.24.jar:5.3.24]
+	at jdk.proxy2/jdk.proxy2.$Proxy92.deleteById(Unknown Source) ~[na:na]
+	at org.project.service.ClientServiceImpl.updateClientFollowedMovie(ClientServiceImpl.java:527) ~[classes/:na]
+	at org.project.service.ClientServiceImpl.update(ClientServiceImpl.java:387) ~[classes/:na]
+	at org.project.exposition.rest.ClientApi.create(ClientApi.java:96) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-03-12 16:39:11.454  INFO 18248 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 16:39:11.459  INFO 18248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-12 16:39:11.464  INFO 18248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-12 16:39:17.233  INFO 3380 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 3380 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-12 16:39:17.238  INFO 3380 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-12 16:39:20.500  INFO 3380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 16:39:20.760  INFO 3380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 225 ms. Found 5 JPA repository interfaces.
+2023-03-12 16:39:22.389  INFO 3380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-12 16:39:22.410  INFO 3380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-12 16:39:22.411  INFO 3380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 16:39:22.683  INFO 3380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-12 16:39:22.684  INFO 3380 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5270 ms
+2023-03-12 16:39:23.204  INFO 3380 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 16:39:23.474  INFO 3380 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 16:39:23.980  INFO 3380 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 16:39:24.288  INFO 3380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-12 16:39:24.545  INFO 3380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-12 16:39:24.607  INFO 3380 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-12 16:39:26.451  INFO 3380 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 16:39:26.468  INFO 3380 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 16:39:28.053  WARN 3380 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 16:39:29.865  INFO 3380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 16:39:30.613  INFO 3380 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 14.496 seconds (JVM running for 15.292)
+2023-03-12 16:43:12.832  INFO 3380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-12 16:43:12.833  INFO 3380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-12 16:43:12.835  INFO 3380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-12 16:43:13.069  INFO 3380 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : save client : a@free.fr
+2023-03-12 16:43:13.403  INFO 3380 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : movie found in the database
+2023-03-12 16:43:13.466 ERROR 3380 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class org.project.domain.FollowedMovie. Expected: class java.lang.Long, got class java.lang.Integer; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class org.project.domain.FollowedMovie. Expected: class java.lang.Long, got class java.lang.Integer] with root cause
+
+org.hibernate.TypeMismatchException: Provided id of the wrong type for class org.project.domain.FollowedMovie. Expected: class java.lang.Long, got class java.lang.Integer
+	at org.hibernate.event.internal.DefaultLoadEventListener.checkIdClass(DefaultLoadEventListener.java:155) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:71) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1231) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1220) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:202) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2848) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2825) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2781) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2825) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3413) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3380) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362) ~[spring-orm-5.3.24.jar:5.3.24]
+	at jdk.proxy2/jdk.proxy2.$Proxy85.find(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-5.3.24.jar:5.3.24]
+	at jdk.proxy2/jdk.proxy2.$Proxy85.find(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:335) ~[spring-data-jpa-2.7.6.jar:2.7.6]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById(SimpleJpaRepository.java:172) ~[spring-data-jpa-2.7.6.jar:2.7.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:530) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:286) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:640) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.24.jar:5.3.24]
+	at jdk.proxy2/jdk.proxy2.$Proxy92.deleteById(Unknown Source) ~[na:na]
+	at org.project.service.ClientServiceImpl.updateClientFollowedMovie(ClientServiceImpl.java:527) ~[classes/:na]
+	at org.project.service.ClientServiceImpl.update(ClientServiceImpl.java:387) ~[classes/:na]
+	at org.project.exposition.rest.ClientApi.create(ClientApi.java:96) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-03-12 17:07:49.222  INFO 3380 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 17:07:49.279  INFO 3380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-12 17:07:49.297  INFO 3380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-12 17:15:36.772  INFO 2148 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 2148 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-12 17:15:36.779  INFO 2148 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-12 17:15:38.236  INFO 2148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 17:15:38.380  INFO 2148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 5 JPA repository interfaces.
+2023-03-12 17:15:39.466  INFO 2148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-12 17:15:39.481  INFO 2148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-12 17:15:39.482  INFO 2148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 17:15:39.658  INFO 2148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-12 17:15:39.659  INFO 2148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2784 ms
+2023-03-12 17:15:39.992  INFO 2148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 17:15:40.125  INFO 2148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 17:15:40.508  INFO 2148 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 17:15:40.737  INFO 2148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-12 17:15:40.953  INFO 2148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-12 17:15:41.006  INFO 2148 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-12 17:15:42.541  INFO 2148 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 17:15:42.555  INFO 2148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 17:15:43.864  WARN 2148 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 17:15:44.774  INFO 2148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 17:15:45.356  INFO 2148 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 9.355 seconds (JVM running for 10.024)
+2023-03-12 17:15:56.004  INFO 2148 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-12 17:15:56.004  INFO 2148 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-12 17:15:56.007  INFO 2148 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-03-12 17:15:56.133  INFO 2148 --- [http-nio-8080-exec-3] org.project.exposition.rest.ClientApi    : save client : a@free.fr
+2023-03-12 17:15:56.503  INFO 2148 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : movie found in the database
+2023-03-12 17:15:56.611  INFO 2148 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : followedMovie removed from the list
+2023-03-12 17:15:56.622  INFO 2148 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 17:16:34.182  INFO 2148 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : findFollowedMovie client : a@free.fr
+2023-03-12 17:16:34.186  INFO 2148 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 17:17:27.946  INFO 2148 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-12 17:17:27.949  INFO 2148 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 17:18:57.979  INFO 2148 --- [http-nio-8080-exec-7] org.project.exposition.rest.ClientApi    : save client : b@free.fr
+2023-03-12 17:19:11.741  INFO 2148 --- [http-nio-8080-exec-9] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-12 17:19:11.744  INFO 2148 --- [http-nio-8080-exec-9] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 17:19:33.725  INFO 2148 --- [http-nio-8080-exec-10] org.project.exposition.rest.ClientApi    : save client : b@free.fr
+2023-03-12 17:19:33.730  INFO 2148 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : followedTVShow added to the list
+2023-03-12 17:19:33.736  INFO 2148 --- [http-nio-8080-exec-10] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 17:19:47.362  INFO 2148 --- [http-nio-8080-exec-8] org.project.exposition.rest.ClientApi    : save client : b@free.fr
+2023-03-12 17:19:47.368  INFO 2148 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : followedTVShow added to the list
+2023-03-12 17:19:47.373  INFO 2148 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 17:19:51.645  INFO 2148 --- [http-nio-8080-exec-4] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-12 17:19:51.647  INFO 2148 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 17:19:59.424  INFO 2148 --- [http-nio-8080-exec-3] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 17:19:59.426  INFO 2148 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 17:20:39.292  INFO 2148 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : save client : b@free.fr
+2023-03-12 17:20:39.297  INFO 2148 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : followedTVShow added to the list
+2023-03-12 17:20:39.303  INFO 2148 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 17:20:47.178  INFO 2148 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 17:20:47.181  INFO 2148 --- [http-nio-8080-exec-2] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 17:25:48.040  INFO 2148 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 17:25:48.047  INFO 2148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-12 17:25:48.059  INFO 2148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-12 17:25:53.801  INFO 5152 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 5152 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-12 17:25:53.808  INFO 5152 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-12 17:25:56.154  INFO 5152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 17:25:56.724  INFO 5152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 466 ms. Found 5 JPA repository interfaces.
+2023-03-12 17:25:58.681  INFO 5152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-12 17:25:58.710  INFO 5152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-12 17:25:58.711  INFO 5152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 17:25:59.016  INFO 5152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-12 17:25:59.017  INFO 5152 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5105 ms
+2023-03-12 17:25:59.599  INFO 5152 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 17:25:59.810  INFO 5152 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 17:26:00.373  INFO 5152 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 17:26:00.747  INFO 5152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-12 17:26:01.062  INFO 5152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-12 17:26:01.142  INFO 5152 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-12 17:26:03.089  INFO 5152 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 17:26:03.104  INFO 5152 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 17:26:05.311  WARN 5152 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 17:26:06.426  INFO 5152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 17:26:07.216  INFO 5152 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 14.389 seconds (JVM running for 16.027)
+2023-03-12 17:26:51.366  INFO 5152 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-12 17:26:51.367  INFO 5152 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-12 17:26:51.370  INFO 5152 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-12 17:26:51.539  INFO 5152 --- [http-nio-8080-exec-3] org.project.exposition.rest.ClientApi    : save client : b@free.fr
+2023-03-12 17:33:05.006  WARN 5152 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m33s827ms446µs200ns).
+2023-03-12 17:33:05.010  INFO 5152 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : followedTVShow added to the list
+2023-03-12 17:33:05.596  INFO 5152 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 17:33:05.804  INFO 5152 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 17:33:05.809  INFO 5152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-12 17:33:05.828  INFO 5152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-12 17:33:12.223  INFO 11864 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 11864 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-12 17:33:12.229  INFO 11864 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-12 17:33:14.000  INFO 11864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 17:33:14.175  INFO 11864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 5 JPA repository interfaces.
+2023-03-12 17:33:15.632  INFO 11864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-12 17:33:15.651  INFO 11864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-12 17:33:15.651  INFO 11864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 17:33:15.911  INFO 11864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-12 17:33:15.912  INFO 11864 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3596 ms
+2023-03-12 17:33:16.424  INFO 11864 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 17:33:16.605  INFO 11864 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 17:33:16.944  INFO 11864 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 17:33:17.208  INFO 11864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-12 17:33:17.425  INFO 11864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-12 17:33:17.479  INFO 11864 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-12 17:33:19.045  INFO 11864 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 17:33:19.059  INFO 11864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 17:33:20.390  WARN 11864 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 17:33:21.260  INFO 11864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 17:33:21.775  INFO 11864 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 10.222 seconds (JVM running for 10.934)
+2023-03-12 17:33:53.095  INFO 11864 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-12 17:33:53.096  INFO 11864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-12 17:33:53.099  INFO 11864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-12 17:33:53.290  INFO 11864 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : save client : b@free.fr
+2023-03-12 17:33:53.688  INFO 11864 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : followedTVShow added to the list
+2023-03-12 17:33:53.825  INFO 11864 --- [http-nio-8080-exec-1] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 17:34:20.713  INFO 11864 --- [http-nio-8080-exec-3] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 17:34:20.716  INFO 11864 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 17:35:08.023  INFO 11864 --- [http-nio-8080-exec-4] org.project.exposition.rest.ClientApi    : save client : b@free.fr
+2023-03-12 17:35:08.030  INFO 11864 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : tv show found in the database
+2023-03-12 17:35:08.034  INFO 11864 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : followedTVShow found in database
+2023-03-12 17:35:08.056  INFO 11864 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : followedTVShow removed from the list
+2023-03-12 17:35:08.059  INFO 11864 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 17:36:37.537  INFO 11864 --- [http-nio-8080-exec-6] org.project.exposition.rest.ClientApi    : save client : a@free.fr
+2023-03-12 17:36:37.542  INFO 11864 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : tv show found in the database
+2023-03-12 17:36:37.544  INFO 11864 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : followedTVShow added to the list
+2023-03-12 17:36:37.548  INFO 11864 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 17:36:54.922  INFO 11864 --- [http-nio-8080-exec-8] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 17:36:54.925  INFO 11864 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 17:37:41.798  INFO 11864 --- [http-nio-8080-exec-9] org.project.exposition.rest.ClientApi    : save client : b@free.fr
+2023-03-12 17:37:41.802  INFO 11864 --- [http-nio-8080-exec-9] org.project.service.ClientServiceImpl    : tv show found in the database
+2023-03-12 17:37:41.804  INFO 11864 --- [http-nio-8080-exec-9] org.project.service.ClientServiceImpl    : followedTVShow found in database
+2023-03-12 17:37:41.810  INFO 11864 --- [http-nio-8080-exec-9] org.project.service.ClientServiceImpl    : followedTVShow removed from the list
+2023-03-12 17:37:41.813  INFO 11864 --- [http-nio-8080-exec-9] org.project.service.ClientServiceImpl    : client saved
+2023-03-12 17:39:45.897  INFO 11864 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : findFollowedMovie client : h@free.fr
+2023-03-12 17:42:09.168  INFO 11864 --- [http-nio-8080-exec-5] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : t@free.fr
+2023-03-12 17:42:20.413  INFO 11864 --- [http-nio-8080-exec-7] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : t@free.fr
+2023-03-12 17:42:37.354  INFO 11864 --- [http-nio-8080-exec-6] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : a@free.fr
+2023-03-12 17:42:37.355  INFO 11864 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 17:42:44.630  INFO 11864 --- [http-nio-8080-exec-8] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 17:42:44.631  INFO 11864 --- [http-nio-8080-exec-8] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 17:42:50.705  INFO 11864 --- [http-nio-8080-exec-9] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : c@free.fr
+2023-03-12 17:42:52.145  INFO 11864 --- [http-nio-8080-exec-10] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : c@free.fr
+2023-03-12 17:42:53.223  INFO 11864 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : c@free.fr
+2023-03-12 17:43:28.488  INFO 11864 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : d@free.fr
+2023-03-12 17:43:56.212  INFO 11864 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 17:43:56.246  INFO 11864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-12 17:43:56.263  INFO 11864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-12 17:44:03.589  INFO 1872 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 1872 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-12 17:44:03.595  INFO 1872 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-12 17:44:05.055  INFO 1872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 17:44:05.188  INFO 1872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 5 JPA repository interfaces.
+2023-03-12 17:44:06.359  INFO 1872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-12 17:44:06.379  INFO 1872 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-12 17:44:06.379  INFO 1872 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 17:44:06.557  INFO 1872 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-12 17:44:06.558  INFO 1872 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2876 ms
+2023-03-12 17:44:06.928  INFO 1872 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 17:44:07.053  INFO 1872 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 17:44:07.362  INFO 1872 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 17:44:07.533  INFO 1872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-12 17:44:07.715  INFO 1872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-12 17:44:07.746  INFO 1872 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-12 17:44:09.057  INFO 1872 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 17:44:09.071  INFO 1872 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 17:44:10.415  WARN 1872 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 17:44:11.283  INFO 1872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 17:44:11.831  INFO 1872 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 8.973 seconds (JVM running for 9.644)
+2023-03-12 17:44:22.401  INFO 1872 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-12 17:44:22.402  INFO 1872 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-12 17:44:22.404  INFO 1872 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-12 17:44:22.473  INFO 1872 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : findFollowedMovie client : h@free.fr
+2023-03-12 17:44:29.420  INFO 1872 --- [http-nio-8080-exec-5] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : d@free.fr
+2023-03-12 17:44:33.245  INFO 1872 --- [http-nio-8080-exec-6] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : d@free.fr
+2023-03-12 17:44:44.227  INFO 1872 --- [http-nio-8080-exec-4] org.project.exposition.rest.ClientApi    : findFollowedMovie client : a@free.fr
+2023-03-12 17:44:44.270  INFO 1872 --- [http-nio-8080-exec-4] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 17:44:50.349  INFO 1872 --- [http-nio-8080-exec-9] org.project.exposition.rest.ClientApi    : findFollowedMovie client : g@free.fr
+2023-03-12 17:48:20.902  INFO 1872 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 17:48:20.907  INFO 1872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-12 17:48:20.926  INFO 1872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-12 17:48:28.259  INFO 17140 --- [main] org.project.VideoExpositionStarter       : Starting VideoExpositionStarter using Java 17.0.5 on DESKTOP-JIQQNUS with PID 17140 (C:\Exo\MY-MEDIA-MONITOR-BACK\ExpositionLayer\target\classes started by Stagiaire in C:\Exo\MY-MEDIA-MONITOR-BACK)
+2023-03-12 17:48:28.266  INFO 17140 --- [main] org.project.VideoExpositionStarter       : No active profile set, falling back to 1 default profile: "default"
+2023-03-12 17:48:30.275  INFO 17140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 17:48:30.441  INFO 17140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 5 JPA repository interfaces.
+2023-03-12 17:48:31.874  INFO 17140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-12 17:48:31.891  INFO 17140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-12 17:48:31.892  INFO 17140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 17:48:32.176  INFO 17140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-12 17:48:32.177  INFO 17140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3814 ms
+2023-03-12 17:48:32.607  INFO 17140 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 17:48:32.753  INFO 17140 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 17:48:33.120  INFO 17140 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 17:48:33.366  INFO 17140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-12 17:48:33.571  INFO 17140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-12 17:48:33.617  INFO 17140 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-12 17:48:35.109  INFO 17140 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 17:48:35.122  INFO 17140 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 17:48:36.381  WARN 17140 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 17:48:37.251  INFO 17140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 17:48:37.780  INFO 17140 --- [main] org.project.VideoExpositionStarter       : Started VideoExpositionStarter in 10.219 seconds (JVM running for 10.818)
+2023-03-12 17:48:48.310  INFO 17140 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-12 17:48:48.311  INFO 17140 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-12 17:48:48.313  INFO 17140 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-12 17:48:48.388  INFO 17140 --- [http-nio-8080-exec-2] org.project.exposition.rest.ClientApi    : findFollowedMovie client : g@free.fr
+2023-03-12 17:49:01.859  INFO 17140 --- [http-nio-8080-exec-3] org.project.exposition.rest.ClientApi    : findFollowedMovie client : a@free.fr
+2023-03-12 17:49:01.895  INFO 17140 --- [http-nio-8080-exec-3] org.project.service.ClientServiceImpl    : client found in database : a@free.fr
+2023-03-12 17:49:08.653  INFO 17140 --- [http-nio-8080-exec-4] org.project.exposition.rest.ClientApi    : findFollowedMovie client : j@free.fr
+2023-03-12 17:49:18.446  INFO 17140 --- [http-nio-8080-exec-5] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : y@free.fr
+2023-03-12 17:49:28.363  INFO 17140 --- [http-nio-8080-exec-6] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : b@free.fr
+2023-03-12 17:49:28.369  INFO 17140 --- [http-nio-8080-exec-6] org.project.service.ClientServiceImpl    : client found in database : b@free.fr
+2023-03-12 17:49:36.838  INFO 17140 --- [http-nio-8080-exec-7] org.project.exposition.rest.ClientApi    : findFollowedTVShow client : l@free.fr
+2023-03-12 17:52:29.443  INFO 17140 --- [http-nio-8080-exec-10] org.project.exposition.rest.ClientApi    : findFollowedMovie client : k@free.fr
+2023-03-12 17:52:37.558  INFO 17140 --- [http-nio-8080-exec-1] org.project.exposition.rest.ClientApi    : findFollowedMovie client : k@free.fr

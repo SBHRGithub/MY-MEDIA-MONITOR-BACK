@@ -1,10 +1,8 @@
 package org.project.service;
 
 import org.project.domain.*;
-import org.project.infrastructure.IClientRepository;
+import org.project.infrastructure.*;
 
-import org.project.infrastructure.IMovieRepository;
-import org.project.infrastructure.ITVShowRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +13,7 @@ import javax.persistence.EntityNotFoundException;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.LongStream;
 
 
 @Service
@@ -56,6 +55,12 @@ public class ClientServiceImpl implements IClientService {
     Logger logger = LoggerFactory.getLogger(ClientServiceImpl.class);
     @Autowired
     IClientRepository repoClient;
+
+    @Autowired
+    IFollowedMovieRepository repoFollowedMovie;
+
+    @Autowired
+    IFollowedTVShowRepository repoFollowedTVShow;
 
     @Autowired
     IMovieRepository repoMovie;
@@ -119,7 +124,7 @@ public class ClientServiceImpl implements IClientService {
 
             }
 
-            // filter followedMovies and followedTVShows by myScore
+            // filter followedMovies by myScore
             if (!(myScore.isEmpty())) {
 
                 logger.info("followedMovies filter by myScore : {}",myScore.get());
@@ -130,6 +135,10 @@ public class ClientServiceImpl implements IClientService {
 
             }
 
+
+        } else {
+
+            followedMovies = new ArrayList<>();
 
         }
 
@@ -201,7 +210,13 @@ public class ClientServiceImpl implements IClientService {
 
             }
 
+        } else {
+
+            followedTVShows = new ArrayList<>();
+
         }
+
+
 
 
         return followedTVShows;
@@ -395,6 +410,7 @@ public class ClientServiceImpl implements IClientService {
 
 
         int indexFollowedTVShow;
+        Long idFollowedTVShow;
 
 
         followedTVShow=client.getFollowedTVShow().get(0);
@@ -438,6 +454,10 @@ public class ClientServiceImpl implements IClientService {
                 // remove the followedTV from the list
                 followedTVShows.remove(indexFollowedTVShow);
 
+                idFollowedTVShow = Long.valueOf(indexFollowedTVShow+1);
+
+                repoFollowedTVShow.deleteById(idFollowedTVShow);
+
                 logger.info("followedTVShow removed from the list");
 
             }
@@ -476,6 +496,7 @@ public class ClientServiceImpl implements IClientService {
 
 
         int indexFollowedMovie;
+        Long idFollowedMovie;
 
 
         followedMovie=client.getFollowedMovie().get(0);
@@ -508,6 +529,9 @@ public class ClientServiceImpl implements IClientService {
                 .findFirst()
                 .orElse(-1);
 
+
+
+
         // followedMovie found in the database
         if (indexFollowedMovie != -1) {
 
@@ -515,6 +539,11 @@ public class ClientServiceImpl implements IClientService {
 
                 // remove the followedMovie from the database
                 followedMovies.remove(indexFollowedMovie);
+
+
+                idFollowedMovie = Long.valueOf(indexFollowedMovie+1);
+                repoFollowedMovie.deleteById(idFollowedMovie);
+
 
                 logger.info("followedMovie removed from the list");
 
