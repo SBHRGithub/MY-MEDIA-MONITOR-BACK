@@ -1,3 +1,7 @@
 email,title,externalId,mediaType,viewingStatus,myScore
-i@free.fr,Movie6,6,movie,Ongoing,2
-j@free.fr,Movie3,3,movie,To see,3
+a@free.fr,Avatar,19995,movie,Ongoing,2
+a@free.fr,Platoon,792,movie,Viewed,3
+a@free.fr,Tarzan,37135,movie,Not seen,6
+b@free.fr,Avengers,24428,movie,Ongoing,0
+b@free.fr,Speed,1637,movie,Not seen,6
+b@free.fr,Top gun,744,movie,Viewed,4

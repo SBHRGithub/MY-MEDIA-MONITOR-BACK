@@ -50,7 +50,11 @@ public class ClientApi {
 
         logger.info("findFollowedMovie client : {}",email);
 
-        List<FollowedMovie> followedMovies =service.findFollowedMovie(email,title,mediaType,viewingStatus, myScore);
+        List<FollowedMovie> followedMovies;
+
+
+        followedMovies =service.findFollowedMovie(email,title,mediaType,viewingStatus, myScore);
+
 
         ResultListMovieDto results=mapper.convertClientToResultListMovieDto(followedMovies);
 
@@ -76,7 +80,11 @@ public class ClientApi {
 
         logger.info("findFollowedTVShow client : {}",email);
 
-        List<FollowedTVShow> followedTVShows =service.findFollowedTVShow(email,name,mediaType,viewingStatus, myScore);
+        List<FollowedTVShow> followedTVShows;
+
+
+        followedTVShows =service.findFollowedTVShow(email,name,mediaType,viewingStatus, myScore);
+
 
         ResultListTVShowDto results=mapper.convertClientToResultListTVShowDto(followedTVShows);
 
