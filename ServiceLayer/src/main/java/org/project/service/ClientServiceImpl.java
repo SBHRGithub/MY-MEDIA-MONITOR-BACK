@@ -461,14 +461,18 @@ public class ClientServiceImpl implements IClientService {
 
             if (followedTVShow.getViewingStatus().equals(StatusOfViewing.UNFOLLOW.text)){
 
-                // remove the followedTV from the list
+                // remove the followedTVShow from the followTVShows
+
+                idFollowedTVShow = followedTVShows.get(indexFollowedTVShow).getId();
+
                 followedTVShows.remove(indexFollowedTVShow);
 
-                idFollowedTVShow = Long.valueOf(indexFollowedTVShow+1);
+                logger.info("followedTVShow removed from the list");
+
+                // delete followedMovie from the database
 
                 repoFollowedTVShow.deleteById(idFollowedTVShow);
 
-                logger.info("followedTVShow removed from the list");
 
             }
 
@@ -547,15 +551,21 @@ public class ClientServiceImpl implements IClientService {
 
             if (followedMovie.getViewingStatus().equals(StatusOfViewing.UNFOLLOW.text)){
 
-                // remove the followedMovie from the database
+                // remove the followedMovie from the followMovies
+
+                idFollowedMovie = followedMovies.get(indexFollowedMovie).getId();
+
                 followedMovies.remove(indexFollowedMovie);
 
+                logger.info("followedMovie removed from the list");
 
-                idFollowedMovie = Long.valueOf(indexFollowedMovie+1);
+                // delete followedMovie from the database
+
                 repoFollowedMovie.deleteById(idFollowedMovie);
 
 
-                logger.info("followedMovie removed from the list");
+
+
 
             }
 
