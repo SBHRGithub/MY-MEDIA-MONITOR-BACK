@@ -352,6 +352,12 @@ public class ClientServiceImpl implements IClientService {
 
             }
 
+
+            if (!client.getFollowedMovie().get(0).getViewingStatus().equals(StatusOfViewing.UNFOLLOW.text)){
+                repoClient.save(client);
+            }
+
+
         } else if (client.getFollowedTVShow() != null) {
 
             Optional<TVShow> optionalTVShow = repoTVShow.findByExternalId(client.getFollowedTVShow().get(0).getTvShow().getExternalId());
@@ -371,9 +377,13 @@ public class ClientServiceImpl implements IClientService {
 
             }
 
+            if (!client.getFollowedTVShow().get(0).getViewingStatus().equals(StatusOfViewing.UNFOLLOW.text)){
+                repoClient.save(client);
+            }
+
         }
 
-        repoClient.save(client);
+
         return client;
 
     }
@@ -474,7 +484,7 @@ public class ClientServiceImpl implements IClientService {
 
             }
 
-        } else {
+        } else  if (!followedTVShow.getViewingStatus().equals(StatusOfViewing.UNFOLLOW.text)) {
 
             // add the followedTVShow to the list of followedTVShow
             optionalClientDatabase.get().getFollowedTVShow().add(optionalClientDatabase.get().getFollowedTVShow().size(), followedTVShow);
@@ -549,7 +559,7 @@ public class ClientServiceImpl implements IClientService {
 
             }
 
-            else {
+            else  {
 
                 // update the followedMovie with the new data
                 followedMovies.get(indexFollowedMovie).setMyScore(followedMovie.getMyScore());
@@ -558,14 +568,12 @@ public class ClientServiceImpl implements IClientService {
                 logger.info("followedMovie updated with the new data");
 
             }
-        } else {
+        } else if (!followedMovie.getViewingStatus().equals(StatusOfViewing.UNFOLLOW.text)){
 
             // add the followedMovie to the list of followedTVShow
             optionalClientDatabase.get().getFollowedMovie().add(optionalClientDatabase.get().getFollowedMovie().size(), followedMovie);
             logger.info("followedMovie added to the list");
         }
-
-
 
 
 
