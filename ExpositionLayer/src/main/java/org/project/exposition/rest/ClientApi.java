@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -34,8 +35,9 @@ public class ClientApi {
     Logger logger= LoggerFactory.getLogger(ClientApi.class);
 
 
-    @CrossOrigin(origins = "http://localhost:4200")
-    @GetMapping("/get/movie")
+    //    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "*")
+    @GetMapping("/get/movie/**")
     public ResultListMovieDto findFollowedMovie(@RequestParam String email,
                                                 @RequestParam Optional<String> title,
                                                 @RequestParam Optional<String> mediaType,
@@ -63,9 +65,9 @@ public class ClientApi {
     }
 
 
-
-    @CrossOrigin(origins = "http://localhost:4200")
-    @GetMapping("/get/tv")
+    //    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "*")
+    @GetMapping("/get/tv/**")
     public ResultListTVShowDto findFollowedTVShow(@RequestParam String email,
                                                   @RequestParam Optional<String> name,
                                                   @RequestParam Optional<String> mediaType,
@@ -93,9 +95,9 @@ public class ClientApi {
     }
 
 
-
-    @CrossOrigin(origins = "http://localhost:4200")
-    @PostMapping("/post/movie")
+    //    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "*")
+    @PostMapping("/post/movie/**")
     public ResponseEntity<Client> create(@RequestBody FollowedMovieDto followedMovieDto)
     {
         logger.info("save client : {}",followedMovieDto.getEmail());
@@ -108,9 +110,9 @@ public class ClientApi {
     }
 
 
-
-    @CrossOrigin(origins = "http://localhost:4200")
-    @PostMapping("/post/tv")
+    //    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "*")
+    @PostMapping("/post/tv/**")
     public ResponseEntity<Client> create(@RequestBody FollowedTVShowDto followedTVShowDto)
     {
         logger.info("save client : {}",followedTVShowDto.getEmail());
